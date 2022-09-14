@@ -1,0 +1,25 @@
+.animated-highlight {
+    border: 10px solid rgba(0, 255, 255, 0);
+}
+.animated-highlight.pulsate {
+    animation: border-pulsate 2s infinite;
+}
+@keyframes border-pulsate {
+    0% {
+        border-color: rgb(255, 0, 0);
+    }
+
+    50% {
+        border-color: rgba(0, 255, 255, 0);
+    }
+
+    100% {
+        border-color: rgb(255, 0, 0);
+    }
+}
+.blured{
+    filter: blur(6px);
+}
+@media(max-width:750px){
+    .animated-highlight{border:0;}
+}
