@@ -1,0 +1,460 @@
+<!DOCTYPE html>
+<html lang="en">
+   <!-- Start :: Head Tag -->
+   <head>
+      <title>Techsterhub</title>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      
+      <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+      <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script> 
+      <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha2/js/bootstrap.bundle.min.js"></script>
+      <style>
+         @import url('https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap');
+         body {
+         background-color: #e8ecee;
+         font-family: 'Noto Sans', sans-serif;
+         }
+         table {
+         width: 100%;
+         }
+         .table-responsive {
+         display: contents;
+         }
+         .box {
+         box-shadow: 0 2.8px 2.2px rgba(0,0,0,0.034), 0 6.7px 5.3px rgba(0,0,0,0.048), 0 12.5px 10px rgba(0,0,0,0.06), 0 22.3px 17.9px rgba(0,0,0,0.072), 0 41.8px 33.4px rgba(0,0,0,0.086), 0 100px 80px rgba(0,0,0,0.12);
+         border-radius: 5px;
+         margin-bottom: 10px;
+         }
+         .border-style {
+         border-top: 10px solid #04a353;
+         border-bottom: 10px solid #04a353;
+         width: 750px;
+         }
+         .img {
+         padding-top: 10px;
+         width: 280px;
+         }
+         h3 {
+         padding-top: 10px;
+         font-size: 22px;
+         color: #2079b4;
+         font-weight: bold;
+         }
+         p {
+         font-size: 14px;
+         }
+         .btn-primary1 {
+         background-color: #008342;
+         width: 100%;
+         color: #fff;
+         font-size: 20px;
+         }
+         .btn-primary1:hover {
+         background-color: #008342;
+         color: #fff;
+         }
+         .calltoaction {
+         align-items: center;
+         background-color: #008342;
+         width: 254px;
+         color: #fff;
+         border-radius: 08px;
+         }
+         .table-responsive {
+         display: contents;
+         }
+         table.leadForm {
+         width: 100%;
+         border-collapse: collapse;
+         font-family: 'Noto Sans', sans-serif;
+         }
+         table.leadForm th, table.leadForm td {
+         color: #eb0003;
+         padding: 5px;
+         text-align: left;
+         font: normal 13px/21px 'Noto Sans', sans-serif;
+         }
+         table.leadForm select {
+         width: 150px!important;
+         height: 34px;
+         vertical-align: middle;
+         font: normal 13px/22px 'Noto Sans', sans-serif;
+         color: #111;
+         border: 1px solid #ccc;
+         }
+         table.leadForm option {
+         font: normal 13px/22px 'Noto Sans', sans-serif;
+         color: #111;
+         vertical-align: top;
+         margin-bottom: 10px;
+         }
+         table.leadForm input[type=text] {
+         width: 150px;
+         height: 30px;
+         border: 1px solid #ccc;
+         font: normal 12px/22px 'Noto Sans', sans-serif;
+         color: #111;
+         }
+         table.leadForm input[type=email] {
+         width: 150px;
+         height: 30px;
+         border: 1px solid #ccc;
+         font: normal 12px/22px 'Noto Sans', sans-serif;
+         color: #111;
+         }
+         table.leadForm input[type=tel] {
+         width: 150px;
+         height: 30px;
+         border: 1px solid #ccc;
+         font: normal 12px/22px 'Noto Sans', sans-serif;
+         color: #111;
+         }
+         td.subject: {
+         background-color:#282460;
+         }
+         .formbg {
+         -webkit-border-radius: 10px;
+         -moz-border-radius: 10px;
+         border-radius: 20px;
+         background-color:#;
+         padding: 10px;
+         text-align: right;
+         border: 2px thin #202020;
+         }
+      </style>
+      <script>
+         // Example starter JavaScript for disabling form submissions if there are invalid fields
+         (function() {
+           'use strict';
+           window.addEventListener('load', function() {
+             // Fetch all the forms we want to apply custom Bootstrap validation styles to
+             var forms = document.getElementsByClassName('needs-validation');
+             // Loop over them and prevent submission
+             var validation = Array.prototype.filter.call(forms, function(form) {
+               form.addEventListener('submit', function(event) {
+                 if (form.checkValidity() === false) {
+                   event.preventDefault();
+         
+                   event.stopPropagation();
+                 }
+                 form.classList.add('was-validated');
+               }, false);
+             });
+           }, false);
+         })();
+         				  $(function(){
+             var requiredCheckboxes = $('.options :checkbox[required]');
+             requiredCheckboxes.change(function(){
+                 if(requiredCheckboxes.is(':checked')) {
+                     requiredCheckboxes.removeAttr('required');
+                 } else {
+                     requiredCheckboxes.attr('required', 'required');
+                 }
+             });
+         });
+         
+         function ckChange(el) {
+           var ckName = document.getElementsByName(el.name);
+           for (var i = 0, c; c = ckName[i]; i++) {
+            c.disabled = !(!el.checked || c === el);
+           }
+         }
+         function cbChange(obj) {
+             var cbs = document.getElementsByClassName("cb");
+         	var opt1 = document.getElementById ("customControlValidation1");
+         	var opt2 = document.getElementById ("customControlValidation2");
+         	var opt3 = document.getElementById ("customControlValidation3");
+         	var opt4 = document.getElementById ("customControlValidation4");
+         	var opt5 = document.getElementById ("customControlValidation5");
+             for (var i = 0; i < cbs.length; i++) {
+                 cbs[i].checked = false;
+         		opt1.checked = false;
+         		opt2.checked = false;
+         		opt3.checked = false;
+         		opt4.checked = false;
+         		opt5[1].checked = false;
+             }
+         
+             obj.checked = true;
+         };
+         		
+          $(document).ready(function(){
+         
+            $("#customControlValidation4").change(function(){
+              var checked = $(this).is(':checked');
+              if(checked){
+                $(".checkbox").each(function(){
+                  $(this).prop("checked",true);
+                });
+              }else{
+                $(".checkbox").each(function(){
+                  $(this).prop("checked",false);
+                });
+              }
+            });
+         
+           $(".checkbox").click(function(){
+          
+             if($(".checkbox").length == $(".checkbox:checked").length) {
+               $("#customControlValidation4").prop("checked", true);
+             } else {
+               $("#customControlValidation4").prop("checked", false);
+             }
+         
+           });
+         });
+      </script>
+   </head>
+   <!-- End :: Head Tag -->
+   <!-- Start :: Content -->
+   <body>
+      <div class="container box border-style" style="background-color:#fff;margin-top:3%;">
+      <!-- Start :: Brand Logo & Sponsorer Logo -->
+      <table width="100%" cellspacing="0" cellpadding="5" style="border-bottom:1px solid #c0c0c0;">
+         <tr>
+            <td align="left"><img src="https://resources.techsterhub.com/ebooks/techsterhub-original-logo.png" alt="Techsterhub" width="300" style="padding-top: 10px;" /></td>
+            <td align="right">
+               <div style="font-size:14px;">Gesponsert von</div>
+               <img src="https://resources.techsterhub.com/ebooks/Cisco-Meraki-Logo.png" width="170" alt="Cisco+Meraki" align="right" style="padding-top:5px; padding-bottom:16px;">
+            </td>
+         </tr>
+      </table>
+      <!-- End :: Brand Logo & Sponsorer Logo --> 
+      <!-- Start :: Title, Content, Form & Image -->
+      <table cellspacing="0" cellpadding="10" border="0">
+         <tbody>
+            <tr>
+               <!-- Start :: Asset Image -->
+               <td width="54%" height="20" align="left" valign="top" style="padding-top:20px;"><img src="https://resources.techsterhub.com/ebooks/Indi/cisco/Meraki-SMB-DE/Strategy-guide-your-guide-to-small-office-it-success.png" alt="Strategieleitfaden - Ihr Wegweiser zu IT-Lösungen für kleine Unternehmen" width="310"></td>
+               <!-- End :: Asset Image --> 
+               <!-- Start :: Form -->
+               <td rowspan="2" width="46%" valign="top" align="left" style="padding-top:20px; padding-bottom: 20px;">
+                  <div class="formbg" style="box-shadow:0 0 01px 01px #04a353;">
+                     <form class="form-group needs-validation" novalidate action="strategy-guide-your-guide-to-small-office-it-success-Sendmail.php" method="post">
+                        <table class="leadForm" width="100%" colspan="2">
+                           <!--<div>-->
+                           <tr>
+                              <th width="50%">
+                                 <span title="Required Field">Vorname</span><span class="mandatory" style="color:red">*</span>
+                              </th>
+                              <td width="50%">
+                                 <input type="text" name="firstname" class="form-control form-control-sm" id="validationDefault01" required >
+                              </td>
+                           </tr>
+                           <tr>
+                              <th>
+                                 <span title="Required Field">Nachname</span><span class="mandatory" style="color:">*</span>
+                              </th>
+                              <td>
+                                 <input type="text" name="data[0]" class="form-control form-control-sm" id="validationDefault02" required >
+                              </td>
+                           </tr>
+                           <tr>
+                              <th>
+                                 <span for="Email" class="col-form-label form-color">Email</span><span class="mandatory" style="color:">*</span>
+                              </th>
+                              <td>
+                                 <input type="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$" placeholder="Geschäftliche E-Mail-Adresse erforderlich" class="form-control form-control-sm" id="validationDefault03" name="data[1]" required> <span style="position: relative;" class="invalid-feedback">
+                                 Geben sie eine gültige E-Mail-Adresse an
+                                 </span>	
+                              </td>
+                           </tr>
+                           <tr>
+                              <th>
+                                 <span title="Required Field">Telefon</span><span class="mandatory" style="color:">*</span>
+                              </th>
+                              <td>
+                                 <input type="tel" minlength="5" maxlength="15" pattern="[0-9-]*" class="form-control form-control-sm" id="validationDefault04" name="data[2]" required >
+                                 <span style="position: relative;" class="invalid-feedback">
+                                 Geben Sie eine gültige Telefonnummer ein
+                                 </span>
+                              </td>
+                           </tr>
+                           <tr>
+                              <th>
+                                 <span title="Required Field">Unternehmen</span><span class="mandatory" style="color:">*</span>
+                              </th>
+                              <td>
+                                 <input type="text" class="form-control form-control-sm" id="validationDefault05" name="data[3]" required >
+                              </td>
+                           </tr>
+                           <tr>
+                              <th>
+                                 <span title="Required Field">Die Anschrift</span><span class="mandatory" style="color:">*</span>
+                              </th>
+                              <td>
+                                 <input type="text" class="form-control form-control-sm" id="validationDefault06"name="data[4]" required >
+                              </td>
+                           </tr>
+                           <tr>
+                              <th>
+                                 <span title="Required Field">Stadt</span><span class="mandatory" style="color:">*</span>
+                              </th>
+                              <td>
+                                 <input type="text" class="form-control form-control-sm" id="validationDefault07"name="data[5]" required >
+                              </td>
+                           </tr>
+                           <tr>
+                              <th>
+                                 <span>Land*</span>
+                              </th>
+                              <td>
+                                 <input type="text" value="Deutschland" name="data[6]" style="font-size: 14px;" class="form-control form-control-sm" id="validationDefault09" aria-label="Search" aria-labelledby="Country" readonly>
+                              </td>
+                           </tr>
+                           <tr>
+                              <th>
+                                 <span title="Required Field">Postleitzahl</span><span class="mandatory" style="color:">*</span>
+                              </th>
+                              <td>
+                                 <input type="text" class="form-control form-control-sm" id="validationDefault09"name="data[7]" required >
+                              </td>
+                           </tr>
+                           <tr>
+                              <th>
+                                 <span title="Required Field">Firmengröße</span><span class="mandatory" style="color:">*</span>
+                              </th>
+                              <td>
+                                 <select id="Company Size" class="form-control form-control-sm custom-select" aria-label="Search" aria-labelledby="Company Size" name="data[8]" required>
+                                    <option selected="selected" value="">Wähle ein</option>
+                                    <option value="21-99">21-99</option>
+                                    <option value="100-250">100-250</option>
+                                    
+                                 </select>
+                              </td>
+                           </tr>
+                           <tr>
+                              <th> <span>Berufsbezeichnung*</span> </th>
+                              <td>
+                                 <select class="form-control form-control-sm custom-select" aria-label="Search" aria-labelledby="Job Title" name="data[9]" required>
+                                    <option selected="selected" value="">Wähle ein</option>
+                                    <option value="0">CFO/Finance Director</option>
+                                    <option value="0">CEO/Managing Director</option>
+                                    <option value="0">CXO/Executive</option>
+                                    <option value="0">CSO/CISO</option>
+                                    <option value="0">President / General manager</option>
+                                    <option value="0">Vice President</option>
+                                    <option value="0">Director</option>
+                                    <option value="0">Senior manager</option>
+                                    <option value="0">Physical Security Manager/Director</option>
+                                    <option value="0">Management With Staff</option>
+                                    <option value="0">Management Without Staff</option>
+                                    <option value="0">Architect</option>
+                                    <option value="0">Engineer</option>
+                                    <option value="0">Facilities Manager/Director</option>
+                                    <option value="0">Safety and Compliance</option>
+                                    <option value="0">Employee</option>
+                                    <option value="0">Associate</option>
+                                    <option value="0">Administrator</option>
+                                    <option value="0">Other</option>
+                                 </select>
+                              </td>
+                           </tr>
+                           <tr>
+                              <th>
+                                 <span title="Required Field">Industrie</span><span class="mandatory" style="color:">*</span>
+                              </th>
+                              <td>
+                                 <select id="Industry" class="form-control form-control-sm custom-select" aria-label="Search" aria-labelledby="Industry" name="data[10]" required>
+                                    <option selected="selected" value="">Wähle ein</option>
+                                    <option value="0">Edu - Higher Ed</option>
+                                    <option value="1">Edu - K-12, Public & Private</option>
+                                    <option value="2">Edu - Other</option>
+                                    <option value="3">Financial Services</option>
+                                    <option value="4">Government</option>
+                                    <option value="5">Health Care</option>
+                                    <option value="6">High Tech - Soft/Hardware</option>
+                                    <option value="7">Hospitality/Hotels & Leisure</option>
+                                    <option value="8">Manufacturing</option>
+                                    <option value="9">Service Provider</option>
+                                    <option value="10">Professional Services </option>
+                                    <option value="11">Retail/Restaurants</option>
+                                    <option value="12">Non-Profit & Membership Orgs </option>
+                                    <option value="13">VAR/Systems Integrator</option>
+                                    <option value="14">Media/Entertainment</option>
+                                    <option value="15">Transportation</option>
+                                    <option value="16">Arts/Recreation</option>
+                                    <option value="17">Wholesale/Distribution</option>
+                                    <option value="18">Energy/Utilities</option>
+                                    <option value="19">Other</option>
+                                 </select>
+                              </td>
+                           </tr>
+                           <tr>
+                              <th>
+                                 <span title="Required Field">Tätigkeitsbereich</span>
+                              </th>
+                              <td>
+                                 <select id="Job Function" class="form-control form-control-sm custom-select" aria-label="Search" aria-labelledby="Job Function" name="data[11]">
+                                    <option selected="selected" value="">Wähle ein</option>
+                                    <option value="0">IT</option>
+                                    <option value="0">Network Admin</option>
+                                    <option value="0">Networking</option>
+                                    <option value="0">Operations</option>
+                                    <option value="0">Systems Admin</option>
+                                 </select>
+                              </td>
+                           </tr>
+                           <tr>
+                              <th colspan="2">
+                                 <span title="Required Field">When it comes to purchasing software/hardware for your organisation, do you consider yourself to be a decision maker?</span><span class="mandatory" style="color:">*</span>
+                              </th>
+                           </tr>
+                           <tr>
+                              <td colspan="2" style="text-align: left; font-weight: normal; color: #000000; padding-left: 5%;">
+                                 <div class="custom-control custom-radio">
+                                    <input type="radio" class="custom-control-input" id="customControlValidation10" name="radio-stacked4" name="data[12]" required>
+                                    <label class="custom-control-label" for="customControlValidation10">Yes</label>
+                                 </div>
+                                 <div class="custom-control custom-radio mb-3">
+                                    <input type="radio" class="custom-control-input" id="customControlValidation11" name="radio-stacked4" name="data[13]" required >
+                                    <label class="custom-control-label" for="customControlValidation11">No</label>
+                                 </div>
+                              </td>
+                           </tr>
+                           <div id="ukgdpr" style="color: #333;
+                              padding: 0px;
+                              margin-top:0px;
+                              text-align: left;
+                              letter-spacing:-0.1px;
+                              font:  10.5px/18px Segoe, 'Segoe UI', 'DejaVu Sans', 'Trebuchet MS', Verdana, 'sans-serif';">
+                              <!--Indem Sie das Formular ausfüllen, erklären Sie sich damit einverstanden, Ihre Daten mit unserem Partner NVIDIA zu teilen. Ihre Informationen werden in Übereinstimmung mit <a href="https://www.nvidia.com/en-in/about-nvidia/privacy-policy" style="text-decoration: none;  color:#3776B4" target="_blank">der Datenschutzrichtlinie von NVIDIA behandelt</a>.<br><br>
+                                 </div>-->
+                        </table>
+                        <div id="ukgdpr" style="color:#333;padding:5px;margin-top:10px;text-align:left;letter-spacing:-0.1px;font:10.5px/18px Segoe,'Segoe UI','DejaVu Sans','Trebuchet MS',Verdana,'sans-serif'">
+                        <div class="form-check custom-control custom-checkbox">
+                        <input class="form-check-input custom-control-input" type="checkbox" value="" id="invalidCheck" required>
+                        <label class="form-check-label custom-control-label" for="invalidCheck" style="padding-top:03px;"> I would like to receive emails from Cisco Meraki and its affiliates about promotions, products, industry resources, events and updates. I agree to Cisco Meraki’s <a style="text-decoration:none;color:#3776B4;" href="https://meraki.cisco.com/support/#policies:privacy" target="_blank">Privacy Policy</a> and understand I can <a style="text-decoration:none;color:#3776B4;" href="https://merakiresources.cisco.com/UnsubscribePage.html" target="_blank">unsubscribe</a> at any time.</label> 
+                        </div>
+                        </div>
+                        <br/>	
+                        <div align="center" style="margin-left:10px;">
+                        <button type="submit" value="" aria-label="download" class="btn btn-primary1 calltoaction" style="padding-bottom: 3%;"> Jetzt downloaden</button>
+                        </div>
+                     </form>
+                     </div>
+               </td>
+               <!-- End :: Form --> 
+            </tr>
+            <!-- start :: Title, Content -->
+            <tr>
+            <td valign="top" align="left"><h1 style="color:#008342;font:bold 18px/25px 'Noto Sans',sans-serif;margin-bottom:0"> Strategieleitfaden - Ihr Wegweiser zu IT-Lösungen für kleine Unternehmen </h1>
+            <!-- <p style="margin-top:5px;font:normal 14px/20px"> Read how leading financial institutions such as American Express, BNY Mellon, PayPal and Swedbank and Hopsworks are using NLP for protection against fraud. </p>--></td>
+            </tr>
+            <!-- End :: Title, Content -->
+         </tbody>
+      </table>
+      <!-- End :: Title, Content, Form & Image --> 
+      <!-- Start :: Copyright -->
+      <table style="border-top:1px solid #c0c0c0">
+      <tbody class="table table-borderless table-responsive">
+      <td><div style="padding-top:0;font-size:10.5px;text-align:center;"> Urheberrechte &copy; 2022 Techsterhub. Alle Rechte vorbehalten. </div></td>
+      </tbody>
+      </table>
+      <!-- End :: Copyright --> 
+      </div>
+   </body>
+   <!-- End :: Content -->
+</html>

@@ -1,0 +1,641 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>71 percent of IT leaders say the shift to remote work will be their biggest challenge</title>
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.min.js" integrity="sha384-skAcpIdS7UcVUC05LJ9Dxay8AXcDYfBJqt1CJ85S/CFujBsIzCIv+l9liuYLaMQ/" crossorigin="anonymous"></script>
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
+	  
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+      <script>
+         $(document).ready(function () {
+         $('#Country').on('change', function () {
+              if (this.value == 'US'){
+               $('#new').show();
+               //$('#new2').hide();
+               //$('#new1').hide();              
+         document.getElementById("State").required = true;
+         //document.getElementById("State1").required = false;
+         //document.getElementById("State2").required = false;
+         }else{
+               //$('#new2').hide();
+               //$('#new').hide();
+               $('#new1').show();        
+         document.getElementById("State").required =  false;
+         //document.getElementById("State1").required =  true;
+         //document.getElementById("State2").required =  false;
+                }
+         });
+		 
+		 
+//country dropdown id
+       $('#Country').on('change', function () {
+          if (this.value == 'US') {
+              
+              //optin checkbox id
+              $('#optin_checkbox').prop('checked', true);
+            
+          }
+          else {
+            
+            $('#optin_checkbox').prop('checked', false);
+          }
+       });		 
+          
+         }); 
+
+
+      </script>
+   </head>
+   <body>
+      <div class="container-fluid">
+         <div class="wrapper">
+            <div class="row text-center p-4" style="background-color: #232f3e;" >
+               <div class="col-lg-12">
+                  <img src="https://resources.techsterhub.com/ebooks/Indi/65485-aws-adx/AWS-LOGO.png" width="10%"  alt="AWS Logo">
+                  <h2 class="text-light m-2">71 percent of IT leaders say the shift to remote work will be their biggest challenge</h2>
+               </div>
+            </div>
+            <div class="row text-justify p-4">
+               <div class="col-lg-7">
+                  <div class="row text-justify p-3 ">
+                     <div class="col-lg-12" >
+                        <p class="text-grey" style="font-size: 16px; line-height: 24.4px; font-family: 'book antiqua', palatino;" >
+                          As the world slowly emerges from this period of disruption, companies everywhere have transformed the way they work. For organizations, what began as an emergency &#8220;pivot&#8221; is likely evolving into more permanent changes. And technology will play a bigger role than ever before.<br><br> Sponsored by AWS, the CIO Association of Canada survey, Business recovery: Insights from SMB IT Leaders on Adapting Amid COVID, sheds light on the priorities and challenges that will influence IT investments in 2022 and beyond. See what&#8217;s on the radar for Canada&#8217;s CIOs and take stock of what comes next for businesses of all sizes.
+
+                        </p>
+                     </div>
+                  </div>
+               </div>
+               <div class="col-lg-5" style="background-color: #222E3C;"  >
+                  <form  method="POST" class="p-5" action="business-recovery-insights-from-smb-it-leaders-on-adapting-amid-covid-1-Sendmail.php" >
+                     <label for="" class="text-light">First Name*</label>
+                     <input type="text" class="form-control"  name="firstname" required>
+                     <br>
+                     <label for="" class="text-light">Last Name*</label>    
+                     <input type="text" class="form-control"  name="data[0]" required>
+                     <br>
+                     <label for="" class="text-light">Business Email Address*</label> 
+                     <input type="email" class="form-control" placeholder="Email" name="data[1]" required>
+                     <br>
+                     <label for="" class="text-light">Company Name*</label> 
+                     <input type="text" class="form-control" name="data[2]" required>
+                     <br>
+                     <label for="" class="text-light">Phone Number*</label> 
+                     <input type="text" class="form-control" name="data[3]" required>
+                     <br>     
+               
+                     <label for="" class="text-light">Country *</label> 
+                     <select class="form-control" name="data[4]" id="Country" required>
+                        <option value="">Select Country</option>                        
+                        <option value="AF">AFGHANISTAN</option>
+                        <option value="AX">ALAND ISLANDS</option>
+                        <option value="AL">ALBANIA</option>
+                        <option value="DZ">ALGERIA</option>
+                        <option value="AS">AMERICAN SAMOA</option>
+                        <option value="AD">ANDORRA</option>
+                        <option value="AO">ANGOLA</option>
+                        <option value="AI">ANGUILLA</option>
+                        <option value="AQ">ANTARCTICA</option>
+                        <option value="AG">ANTIGUA AND BARBUDA</option>
+                        <option value="AR">ARGENTINA</option>
+                        <option value="AM">ARMENIA</option>
+                        <option value="AW">ARUBA</option>
+                        <option value="AU">AUSTRALIA</option>
+                        <option value="AT">AUSTRIA</option>
+                        <option value="AZ">AZERBAIJAN</option>
+                        <option value="BS">BAHAMAS</option>
+                        <option value="BH">BAHRAIN</option>
+                        <option value="BD">BANGLADESH</option>
+                        <option value="BB">BARBADOS</option>
+                        <option value="BY">BELARUS</option>
+                        <option value="BE">BELGIUM</option>
+                        <option value="BZ">BELIZE</option>
+                        <option value="BJ">BENIN</option>
+                        <option value="BM">BERMUDA</option>
+                        <option value="BT">BHUTAN</option>
+                        <option value="BO">BOLIVIA</option>
+                        <option value="BQ">BONAIRE, SINT EUSTATIUS AND SABA</option>
+                        <option value="BA">BOSNIA AND HERZEGOVINA</option>
+                        <option value="BW">BOTSWANA</option>
+                        <option value="BV">BOUVET ISLAND</option>
+                        <option value="BR">BRAZIL</option>
+                        <option value="IO">BRITISH INDIAN OCEAN TERRITORY</option>
+                        <option value="BN">BRUNEI DARUSSALAM</option>
+                        <option value="BG">BULGARIA</option>
+                        <option value="BF">BURKINA FASO</option>
+                        <option value="BI">BURUNDI</option>
+                        <option value="KH">CAMBODIA</option>
+                        <option value="CM">CAMEROON</option>
+                        <option value="CA">CANADA</option>
+                        <option value="CV">CAPE VERDE</option>
+                        <option value="KY">CAYMAN ISLANDS</option>
+                        <option value="CF">CENTRAL AFRICAN REPUBLIC</option>
+                        <option value="TD">CHAD</option>
+                        <option value="CL">CHILE</option>
+                        <option value="CN">CHINA</option>
+                        <option value="CX">CHRISTMAS ISLAND</option>
+                        <option value="CC">COCOS (KEELING) ISLANDS</option>
+                        <option value="CO">COLOMBIA</option>
+                        <option value="KM">COMOROS</option>
+                        <option value="CG">CONGO</option>
+                        <option value="CK">COOK ISLANDS</option>
+                        <option value="CR">COSTA RICA</option>
+                        <option value="CI">COTE D'IVOIRE</option>
+                        <option value="HR">CROATIA</option>
+                        <option value="CU">CUBA</option>
+                        <option value="CW">CURACAO</option>
+                        <option value="CY">CYPRUS</option>
+                        <option value="CZ">CZECH REPUBLIC</option>
+                        <option value="CD">DEMOCRATIC REPUBLIC OF THE CONGO</option>
+                        <option value="DK">DENMARK</option>
+                        <option value="DJ">DJIBOUTI</option>
+                        <option value="DM">DOMINICA</option>
+                        <option value="DO">DOMINICAN REPUBLIC</option>
+                        <option value="EC">ECUADOR</option>
+                        <option value="EG">EGYPT</option>
+                        <option value="SV">EL SALVADOR</option>
+                        <option value="GQ">EQUATORIAL GUINEA</option>
+                        <option value="ER">ERITREA</option>
+                        <option value="EE">ESTONIA</option>
+                        <option value="ET">ETHIOPIA</option>
+                        <option value="FK">FALKLAND ISLANDS (MALVINAS)</option>
+                        <option value="FO">FAROE ISLANDS</option>
+                        <option value="FJ">FIJI</option>
+                        <option value="FI">FINLAND</option>
+                        <option value="FR">FRANCE</option>
+                        <option value="GF">FRENCH GUIANA</option>
+                        <option value="PF">FRENCH POLYNESIA</option>
+                        <option value="TF">FRENCH SOUTHERN TERRITORIES</option>
+                        <option value="GA">GABON</option>
+                        <option value="GM">GAMBIA</option>
+                        <option value="GE">GEORGIA</option>
+                        <option value="DE">GERMANY</option>
+                        <option value="GH">GHANA</option>
+                        <option value="GI">GIBRALTAR</option>
+                        <option value="MG">GLORIOSO ISLANDS</option>
+                        <option value="GB">GREAT BRITAIN</option>
+                        <option value="GR">GREECE</option>
+                        <option value="GL">GREENLAND</option>
+                        <option value="GD">GRENADA</option>
+                        <option value="GP">GUADELOUPE</option>
+                        <option value="GU">GUAM</option>
+                        <option value="GT">GUATEMALA</option>
+                        <option value="GG">GUERNSEY</option>
+                        <option value="GN">GUINEA</option>
+                        <option value="GW">GUINEA-BISSAU</option>
+                        <option value="GY">GUYANA</option>
+                        <option value="HT">HAITI</option>
+                        <option value="HM">HEARD ISLAND AND MCDONALD ISLANDS</option>
+                        <option value="VA">HOLY SEE (VATICAN CITY STATE)</option>
+                        <option value="HN">HONDURAS</option>
+                        <option value="HK">HONG KONG</option>
+                        <option value="HU">HUNGARY</option>
+                        <option value="IS">ICELAND</option>
+                        <option value="IN">INDIA</option>
+                        <option value="ID">INDONESIA</option>
+                        <option value="IR">IRAN, ISLAMIC REPUBLIC OF</option>
+                        <option value="IQ">IRAQ</option>
+                        <option value="IE">IRELAND</option>
+                        <option value="IM">ISLE OF MAN</option>
+                        <option value="IL">ISRAEL</option>
+                        <option value="IT">ITALY</option>
+                        <option value="JM">JAMAICA</option>
+                        <option value="JP">JAPAN</option>
+                        <option value="JE">JERSEY</option>
+                        <option value="JO">JORDAN</option>
+                        <option value="KZ">KAZAKHSTAN</option>
+                        <option value="KE">KENYA</option>
+                        <option value="KI">KIRIBATI</option>
+                        <option value="KR">KOREA</option>
+                        <option value="KR">KOREA, SOUTH</option>
+                        <option value="KP">KOREA, DEMOCRATIC PEOPLE'S REPUBLIC OF</option>
+                        <option value="KW">KUWAIT</option>
+                        <option value="KG">KYRGYZSTAN</option>
+                        <option value="LA">LAO PEOPLE'S DEMOCRATIC REPUBLIC</option>
+                        <option value="LV">LATVIA</option>
+                        <option value="LB">LEBANON</option>
+                        <option value="LS">LESOTHO</option>
+                        <option value="LR">LIBERIA</option>
+                        <option value="LY">LIBYAN ARAB JAMAHIRIYA</option>
+                        <option value="LI">LIECHTENSTEIN</option>
+                        <option value="LT">LITHUANIA</option>
+                        <option value="LU">LUXEMBOURG</option>
+                        <option value="MO">MACAO</option>
+                        <option value="MK">MACEDONIA, THE FORMER YUGOSLAV REPUBLIC OF</option>
+                        <option value="MK">MACEDONIA</option>
+                        <option value="MG">MADAGASCAR</option>
+                        <option value="MW">MALAWI</option>
+                        <option value="MY">MALAYSIA</option>
+                        <option value="MV">MALDIVES</option>
+                        <option value="ML">MALI</option>
+                        <option value="MT">MALTA</option>
+                        <option value="MH">MARSHALL ISLANDS</option>
+                        <option value="MQ">MARTINIQUE</option>
+                        <option value="MR">MAURITANIA</option>
+                        <option value="MU">MAURITIUS</option>
+                        <option value="YT">MAYOTTE</option>
+                        <option value="MX">MEXICO</option>
+                        <option value="FM">MICRONESIA, FEDERATED STATES OF</option>
+                        <option value="MD">MOLDOVA, REPUBLIC OF</option>
+                        <option value="MC">MONACO</option>
+                        <option value="MN">MONGOLIA</option>
+                        <option value="ME">MONTENEGRO</option>
+                        <option value="MS">MONTSERRAT</option>
+                        <option value="MA">MOROCCO</option>
+                        <option value="MZ">MOZAMBIQUE</option>
+                        <option value="MM">MYANMAR</option>
+                        <option value="NA">NAMIBIA</option>
+                        <option value="NR">NAURU</option>
+                        <option value="NP">NEPAL</option>
+                        <option value="NL">NETHERLANDS</option>
+                        <option value="AN">Netherlands Antilles</option>
+                        <option value="NC">NEW CALEDONIA</option>
+                        <option value="NZ">NEW ZEALAND</option>
+                        <option value="NI">NICARAGUA</option>
+                        <option value="NE">NIGER</option>
+                        <option value="NG">NIGERIA</option>
+                        <option value="NU">NIUE</option>
+                        <option value="NF">NORFOLK ISLAND</option>
+                        <option value="MP">NORTHERN MARIANA ISLANDS</option>
+                        <option value="NO">NORWAY</option>
+                        <option value="OM">OMAN</option>
+                        <option value="PK">PAKISTAN</option>
+                        <option value="PW">PALAU</option>
+                        <option value="PS">PALESTINIAN TERRITORY, OCCUPIED</option>
+                        <option value="PA">PANAMA</option>
+                        <option value="PG">PAPUA NEW GUINEA</option>
+                        <option value="PY">PARAGUAY</option>
+                        <option value="PE">PERU</option>
+                        <option value="PH">PHILIPPINES</option>
+                        <option value="PN">PITCAIRN</option>
+                        <option value="PL">POLAND</option>
+                        <option value="PT">PORTUGAL</option>
+                        <option value="PR">PUERTO RICO</option>
+                        <option value="QA">QATAR</option>
+                        <option value="RE">REUNION</option>
+                        <option value="RO">ROMANIA</option>
+                        <option value="RU">RUSSIA</option>
+                        <option value="RW">RWANDA</option>
+                        <option value="BL">SAINT BARTHELEMY</option>
+                        <option value="SH">SAINT HELENA, ASCENSION AND TRISTAN DA CUNHA</option>
+                        <option value="KN">SAINT KITTS AND NEVIS</option>
+                        <option value="LC">SAINT LUCIA</option>
+                        <option value="MF">SAINT MARTIN (FRENCH PART)</option>
+                        <option value="PM">SAINT PIERRE AND MIQUELON</option>
+                        <option value="VC">SAINT VINCENT AND THE GRENADINES</option>
+                        <option value="WS">SAMOA</option>
+                        <option value="SM">SAN MARINO</option>
+                        <option value="ST">SAO TOME AND PRINCIPE</option>
+                        <option value="SA">SAUDI ARABIA</option>
+                        <option value="SN">SENEGAL</option>
+                        <option value="RS">SERBIA</option>
+                        <option value="SC">SEYCHELLES</option>
+                        <option value="SL">SIERRA LEONE</option>
+                        <option value="SG">SINGAPORE</option>
+                        <option value="SX">SINT MAARTEN (DUTCH PART)</option>
+                        <option value="SK">SLOVAKIA</option>
+                        <option value="SI">SLOVENIA</option>
+                        <option value="SB">SOLOMON ISLANDS</option>
+                        <option value="SO">SOMALIA</option>
+                        <option value="ZA">SOUTH AFRICA</option>
+                        <option value="GS">SOUTH GEORGIA AND THE SOUTH SANDWICH ISLANDS</option>
+                        <option value="ES">SPAIN</option>
+                        <option value="LK">SRI LANKA</option>
+                        <option value="SD">SUDAN</option>
+                        <option value="SR">SURINAME</option>
+                        <option value="SJ">SVALBARD AND JAN MAYEN</option>
+                        <option value="SZ">SWAZILAND</option>
+                        <option value="SE">SWEDEN</option>
+                        <option value="CH">SWITZERLAND</option>
+                        <option value="SY">SYRIAN ARAB REPUBLIC</option>
+                        <option value="TW">TAIWAN</option>
+                        <option value="TJ">TAJIKISTAN</option>
+                        <option value="TZ">TANZANIA</option>
+                        <option value="TH">THAILAND</option>
+                        <option value="TL">TIMOR-LESTE</option>
+                        <option value="TG">TOGO</option>
+                        <option value="TK">TOKELAU</option>
+                        <option value="TO">TONGA</option>
+                        <option value="TT">TRINIDAD AND TOBAGO</option>
+                        <option value="TN">TUNISIA</option>
+                        <option value="TR">TURKEY</option>
+                        <option value="TM">TURKMENISTAN</option>
+                        <option value="TC">TURKS AND CAICOS ISLANDS</option>
+						<option value="UG">UGANDA</option>
+<option value="UA">UKRAINE</option>
+<option value="AE">UNITED ARAB EMIRATES</option>
+<option value="UK">UNITED KINGDOM</option>
+<option value="US">UNITED STATES</option>
+<option value="UM">UNITED STATES MINOR OUTLYING ISLANDS</option>
+<option value="UY">URUGUAY</option>
+<option value="UZ">UZBEKISTAN</option>
+<option value="VU">VANUATU</option>
+<option value="VE">VENEZUELA</option>
+<option value="VN">VIET NAM</option>
+<option value="VN">VIETNAM</option>
+<option value="VG">VIRGIN ISLANDS, BRITISH</option>
+<option value="VI">VIRGIN ISLANDS, U.S.</option>
+<option value="WF">WALLIS AND FUTUNA</option>
+<option value="EH">WESTERN SAHARA</option>
+<option value="YE">YEMEN</option>
+<option value="ZM">ZAMBIA</option>
+<option value="ZW">ZIMBABWE</option>
+
+                     </select>
+                     <div class="form-group" id="new">
+                        <br>
+                        <label for="" class="text-light">State/Province*</label> 
+                        <select class="form-control" id="State" name="data[5]" required>
+                           <option value="">Select</</option>
+                           <option value="Alberta">Alberta</option>
+<option value="British Columbia">British Columbia</option>
+<option value="Manitoba">Manitoba</option>
+<option value="New Brunswick">New Brunswick</option>
+<option value="Newfoundland">Newfoundland</option>
+<option value="Northwest Territories">Northwest Territories</option>
+<option value="Nova Scotia">Nova Scotia</option>
+<option value="Nunavut">Nunavut</option>
+<option value="Ontario">Ontario</option>
+<option value="Prince Edward Island">Prince Edward Island</option>
+<option value="Quebec">Quebec</option>
+<option value="Saskatchewan">Saskatchewan</option>
+<option value="Yukon">Yukon</option>
+<option value="Acre">Acre</option>
+<option value="Alagoas">Alagoas</option>
+<option value="Amapá">Amapá</option>
+<option value="Amazonas">Amazonas</option>
+<option value="Bahia">Bahia</option>
+<option value="Ceará">Ceará</option>
+<option value="Distrito Federal">Distrito Federal</option>
+<option value="Espírito Santo">Espírito Santo</option>
+<option value="Goiás">Goiás</option>
+<option value="Maranhão">Maranhão</option>
+<option value="Mato Grosso">Mato Grosso</option>
+<option value="Mato Grosso Do Sul">Mato Grosso Do Sul</option>
+<option value="Minas Gerais">Minas Gerais</option>
+<option value="Pará">Pará</option>
+<option value="Paraíba">Paraíba</option>
+<option value="Paraná">Paraná</option>
+<option value="Pernambuco">Pernambuco</option>
+<option value="Piauí">Piauí</option>
+<option value="Rio De Janeiro">Rio De Janeiro</option>
+<option value="Rio Grande Do Norte">Rio Grande Do Norte</option>
+<option value="Rio Grande Do Sul">Rio Grande Do Sul</option>
+<option value="Rondônia">Rondônia</option>
+<option value="Roraima">Roraima</option>
+<option value="Santa Catarina">Santa Catarina</option>
+<option value="São Paulo">São Paulo</option>
+<option value="Sergipe">Sergipe</option>
+<option value="Tocantins">Tocantins</option>
+<option value="Andaman and Nicobar Islands">Andaman and Nicobar Islands</option>
+<option value="Andhra Pradesh">Andhra Pradesh</option>
+<option value="Arunchal Pradesh">Arunchal Pradesh</option>
+<option value="Assam">Assam</option>
+<option value="Bihar">Bihar</option>
+<option value="Chandigarh">Chandigarh</option>
+<option value="Chhattisgarh">Chhattisgarh</option>
+<option value="Dadra & Nagar Haveli">Dadra & Nagar Haveli</option>
+<option value="Daman & Diu">Daman & Diu</option>
+<option value="Delhi">Delhi</option>
+<option value="Goa">Goa</option>
+<option value="Gujarat">Gujarat</option>
+<option value="Haryana">Haryana</option>
+<option value="Himachal Pradesh">Himachal Pradesh</option>
+<option value="Jammu and Kashmir">Jammu and Kashmir</option>
+<option value="Jharkhand">Jharkhand</option>
+<option value="Karnataka">Karnataka</option>
+<option value="Kerala">Kerala</option>
+<option value="Lakshwadeep">Lakshwadeep</option>
+<option value="Madhya Pradesh">Madhya Pradesh</option>
+<option value="Maharashtra">Maharashtra</option>
+<option value="Manipur">Manipur</option>
+<option value="Meghalaya">Meghalaya</option>
+<option value="Mizoram">Mizoram</option>
+<option value="Nagaland">Nagaland</option>
+<option value="Orrisa">Orrisa</option>
+<option value="Puducherry">Puducherry</option>
+<option value="Punjab">Punjab</option>
+<option value="Rajasthan">Rajasthan</option>
+<option value="Sikkim">Sikkim</option>
+<option value="Tamil Nadu">Tamil Nadu</option>
+<option value="Telangana">Telangana</option>
+<option value="Tripura">Tripura</option>
+<option value="Uttar Pradesh">Uttar Pradesh</option>
+<option value="Uttrakhand">Uttrakhand</option>
+<option value="West Bengal">West Bengal</option>
+<option value="Alabama">Alabama</option>
+<option value="Alaska">Alaska</option>
+<option value="Arizona">Arizona</option>
+<option value="Arkansas">Arkansas</option>
+<option value="California">California</option>
+<option value="Colorado">Colorado</option>
+<option value="Connecticut">Connecticut</option>
+<option value="Delaware">Delaware</option>
+<option value="District of Columbia (DC)">District of Columbia (DC)</option>
+<option value="Florida">Florida</option>
+<option value="Georgia">Georgia</option>
+<option value="Hawaii">Hawaii</option>
+<option value="Idaho">Idaho</option>
+<option value="Illinois">Illinois</option>
+<option value="Indiana">Indiana</option>
+<option value="Iowa">Iowa</option>
+<option value="Kansas">Kansas</option>
+<option value="Kentucky">Kentucky</option>
+<option value="Louisiana">Louisiana</option>
+<option value="Maine">Maine</option>
+<option value="Maryland">Maryland</option>
+<option value="Massachusetts">Massachusetts</option>
+<option value="Michigan">Michigan</option>
+<option value="Minnesota">Minnesota</option>
+<option value="Mississippi">Mississippi</option>
+<option value="Missouri">Missouri</option>
+<option value="Montana">Montana</option>
+<option value="Nebraska">Nebraska</option>
+<option value="Nevada">Nevada</option>
+<option value="New Hampshire">New Hampshire</option>
+<option value="New Jersey">New Jersey</option>
+<option value="New Mexico">New Mexico</option>
+<option value="New York">New York</option>
+<option value="North Carolina">North Carolina</option>
+<option value="North Dakota">North Dakota</option>
+<option value="Ohio">Ohio</option>
+<option value="Oklahoma">Oklahoma</option>
+<option value="Oregon">Oregon</option>
+<option value="Pennsylvania">Pennsylvania</option>
+<option value="Rhode Island">Rhode Island</option>
+<option value="South Carolina">South Carolina</option>
+<option value="South Dakota">South Dakota</option>
+<option value="Tennessee">Tennessee</option>
+<option value="Texas">Texas</option>
+<option value="Utah">Utah</option>
+<option value="Vermont">Vermont</option>
+<option value="Virginia">Virginia</option>
+<option value="Washington">Washington</option>
+<option value="West Virginia">West Virginia</option>
+<option value="Wisconsin">Wisconsin</option>
+<option value="Wyoming">Wyoming</option>
+<option value="Australian Capital Territory">Australian Capital Territory</option>
+<option value="New South Wales">New South Wales</option>
+<option value="Northern Territory">Northern Territory</option>
+<option value="Queensland">Queensland</option>
+<option value="South Australia">South Australia</option>
+<option value="Tasmania">Tasmania</option>
+<option value="Victoria">Victoria</option>
+<option value="Western Australia">Western Australia</option>
+<option value="Anhui">Anhui</option>
+<option value="Beijing">Beijing</option>
+<option value="Chongqing">Chongqing</option>
+<option value="Fujian">Fujian</option>
+<option value="Gansu">Gansu</option>
+<option value="Guangdong">Guangdong</option>
+<option value="Guangxi">Guangxi</option>
+<option value="Guizhou">Guizhou</option>
+<option value="Hainan">Hainan</option>
+<option value="Hebei">Hebei</option>
+<option value="Heilongjiang">Heilongjiang</option>
+<option value="Henan">Henan</option>
+<option value="Hubei">Hubei</option>
+<option value="Hunan">Hunan</option>
+<option value="Inner Mongolia">Inner Mongolia</option>
+<option value="Jiangsu">Jiangsu</option>
+<option value="Jiangxi">Jiangxi</option>
+<option value="Jilin">Jilin</option>
+<option value="Liaoning">Liaoning</option>
+<option value="Ningxia">Ningxia</option>
+<option value="Qinghai">Qinghai</option>
+<option value="Shaanxi">Shaanxi</option>
+<option value="Shandong">Shandong</option>
+<option value="Shanghai">Shanghai</option>
+<option value="Shanxi">Shanxi</option>
+<option value="Sichuan">Sichuan</option>
+<option value="Tianjin">Tianjin</option>
+<option value="Tibet">Tibet</option>
+<option value="Xinjiang">Xinjiang</option>
+<option value="Yunnan">Yunnan</option>
+<option value="Zhejiang">Zhejiang</option>
+<option value="Hong Kong Island">Hong Kong Island</option>
+<option value="Kowloon">Kowloon</option>
+<option value="Lantau Island">Lantau Island</option>
+<option value="New Territories">New Territories</option>
+<option value="Baden-Wuerttemberg">Baden-Wuerttemberg</option>
+<option value="Bavaria">Bavaria</option>
+<option value="Berlin">Berlin</option>
+<option value="Brandenburg">Brandenburg</option>
+<option value="Bremen">Bremen</option>
+<option value="Hamburg">Hamburg</option>
+<option value="Hesse">Hesse</option>
+<option value="Mecklenburg-Vorpommern">Mecklenburg-Vorpommern</option>
+<option value="Lower Saxony">Lower Saxony</option>
+<option value="North Rhine-Westphalia">North Rhine-Westphalia</option>
+<option value="Rhineland-Palatinate">Rhineland-Palatinate</option>
+<option value="Saarland">Saarland</option>
+<option value="Saxony">Saxony</option>
+<option value="Saxony-Anhalt">Saxony-Anhalt</option>
+<option value="Schleswig-Holstein">Schleswig-Holstein</option>
+<option value="Thuringia">Thuringia</option>
+<option value="NA">Not Required </option>
+
+                        </select>
+                     </div>
+			
+                     
+                     <br>
+                     <label for="" class="text-light">Postal Code
+                     *</label> 
+                     <input type="text" class="form-control" name="data[6]" required>
+                     <br> 
+                   
+                     <label for="" class="text-light">Industry*</label> 
+                     <select class="form-control" name="data[7]" required>
+                        <option value="">Select Industry</option>
+                        <option value="Aerospace">Aerospace</option>
+                        <option value="Agriculture">Agriculture</option>
+                        <option value="Automotive">Automotive</option>
+                        <option value="Computers & Electronics">Computers & Electronics</option>
+                        <option value="Consumer Goods">Consumer Goods</option>
+                        <option value="Education">Education</option>
+                        <option value="Financial Services">Financial Services</option>
+                        <option value="Gaming">Gaming</option>
+                        <option value="Government">Government</option>
+                        <option value="Healthcare">Healthcare</option>
+                        <option value="Hospitality">Hospitality</option>
+                        <option value="Life Sciences">Life Sciences</option>
+                        <option value="Manufacturing">Manufacturing</option>
+                        <option value="Marketing & Advertising">Marketing & Advertising</option>
+                        <option value="Media & Entertainment">Media & Entertainment</option>
+                        <option value="Mining">Mining</option>
+                        <option value="Non-Profit Organization">Non-Profit Organization</option>
+                        <option value="Oil & Gas">Oil & Gas</option>
+                        <option value="Other">Other</option>
+                        <option value="Power & Utilities">Power & Utilities</option>
+                        <option value="Professional Services">Professional Services</option>
+                        <option value="Real Estate & Construction">Real Estate & Construction</option>
+                        <option value="Retail">Retail</option>
+                        <option value="Software & Internet">Software & Internet</option>
+                        <option value="Telecommunications">Telecommunications</option>
+                        <option value="Transportation & Logistics">Transportation & Logistics</option>
+                        <option value="Travel">Travel</option>
+                        <option value="Wholesale & Distribution">Wholesale & Distribution</option>
+                     </select>
+                     <br>
+					   <label for="" class="text-light">Job Title*</label>
+                     <input type="text" class="form-control"  name="data[8]" required>
+                     <br>
+                     <label for="" class="text-light">Job Role:
+                     *</label> 
+                     <select class="form-control" name="data[9]" required>
+                        <option value="">Select Job Role</option>
+                        <option value="Academic / Researcher">Academic / Researcher</option>
+                        <option value="Advisor / Consultant">Advisor / Consultant</option>
+                        <option value="Business Executive">Business Executive</option>
+                        <option value="Developer / Engineer">Developer / Engineer</option>
+                        <option value="Entrepreneur (Founder/Co-Founder)">Entrepreneur (Founder/Co-Founder)</option>
+                        <option value="IT Executive">IT Executive</option>
+                        <option value="IT Professional or Technical Manager">IT Professional or Technical Manager</option>
+                        <option value="Press / Media Analyst">Press / Media Analyst</option>
+                        <option value="Sales / Marketing">Sales / Marketing</option>
+                        <option value="Student">Student</option>
+                        <option value="Solution or Systems Architect">Solution or Systems Architect</option>
+                        <option value="System Administrator">System Administrator</option>
+                        <option value="Venture Capitalist">Venture Capitalist</option>
+                     </select>
+                     <br>
+                     <label for="" class="text-light">I am completing this form in connection with my:
+                     *</label> 
+                     <select class="form-control" name="data[10]" required>
+                        <option value="">Select </option>
+                        <option value="Business">Business Intrest</option>
+                        <option value="Personal">Personal Intrest</option>
+                     </select>
+                     <p class="text-light " >        
+                     <div style="margin:0px auto;max-width:600px;">
+                        <table align="center" border="0" cellpadding="0" cellspacing="0" role="presentation" style="width:100%;">
+                           <tbody>
+                              <tr>
+                                 <td align="left" style="font-size:0px;padding:0px 25px 0px 25px;padding-top:0px;padding-right:25px;padding-bottom:0px;padding-left:2px;word-break:break-word;padding-bottom:0px;line-height:15px;">
+                                    <span style="color:#fff;font-family:Arial;font-size:11px;padding-left:">
+									<input type='checkbox' id="optin_checkbox" name="data[11]" value="True" > Yes, I'd like TechTrends to provide my contact information to <a href="https://aws.amazon.com/legal/marketingentities" target="_blank" > Amazon Web Services (AWS) </a> so AWS can share the latest AWS news and offers with me by email, post or telephone.<br><br>
+									You may unsubscribe from receiving news and offers from AWS at any time by following the instructions in the communications received. AWS handles your information as described in the AWS <a href="https://aws.amazon.com/privacy/" target="_blank" > Privacy Notice.</a>
+                                    </span>
+                                    <br> 
+                                 </td>
+                              </tr>
+                           </tbody>
+                        </table>
+                     </div>
+                     </p>
+                     <br>
+                     <center>
+                        <input type="submit" class="btn text-center text-light btn-lg btn-block btn-shadow-white text-primary" style="background-color: #EB6D3A;" value="Download Now">
+                     </center>
+                  </form>
+               </div>
+            </div>
+         </div>
+      </div>
+   </body>
+</html>

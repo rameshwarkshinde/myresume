@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <title>2022 State of the Phish</title>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+	        <script type="text/javascript">
+
+$(function () {
+        $("#q2_other").click(function () {
+            if ($(this).is(":checked")) {
+                $("#q2-ans").show();
+                
+            } else {
+                $("#q2-ans").hide();
+                
+            }
+        });
+    });
+	</script>
+   </head>
+      <body style="background-color:#DCDCDC">
+   
+	  <div class="container">
+	  <div class="row mt-4">
+	 <div class="offset-lg-2 col-lg-8 text-left mt-4" style="    border: 1px solid;border-radius: 2%; padding: 2%; background-color: #fff" >
+	 <h6>Thank you for your interest.<br><br>Before viewing the promised content, please review the following.<br>
+                             
+                           </h6><hr>
+						   <form action="2022-state-of-the-phish-sendmail.php" id="myForm" method="POST" class="needs-validation mb-4">
+						   <h6>Q1. Proofpoint Security awareness training software is trusted worldwide by thousands of organizations. 
+Is your organization currently using any security awareness training software for your employees?*</h6>
+						    <div class="form-check">
+                                 <input class="form-check-input" name="data[0]" required type="radio" value="Yes" id="flexCheckDefault"><label class="form-check-label" for="flexCheckDefault">
+                                    Yes
+                                 </label><br>
+                                 <input class="form-check-input" name="data[0]" required type="radio" value="No" id="flexCheckDefault"><label class="form-check-label" for="flexCheckDefault">
+                                   No
+                                  </label><br>
+                                 </div>
+								  <br>
+								   <h6>Q2. What security threats present the greatest risk or concerns to you for your end users?*</h6>
+								
+                                   <div class="form-check">
+                                 <input class="form-check-input" name="data[1]" required type="radio" value="Phishing attacks/Email" id="flexCheckDefault"><label class="form-check-label" for="flexCheckDefault">
+                                    Phishing attacks/Email
+                                 </label><br>
+                                 <input class="form-check-input" name="data[1]" required type="radio" value="Privacy compliance (GDPR, CCPA, etc,)" id="flexCheckDefault"><label class="form-check-label" for="flexCheckDefault">
+                                   Privacy compliance (GDPR, CCPA, etc,)
+                                  </label><br>
+								  <input class="form-check-input" name="data[1]" required type="radio" value="WFH and Remote Work Security" id="flexCheckDefault"><label class="form-check-label" for="flexCheckDefault">
+                                   WFH and Remote Work Security
+                                  </label><br>
+								  <input class="form-check-input" name="data[1]" required type="radio" value="Privacy compliance (GDPR, CCPA, etc,)" id="flexCheckDefault"><label class="form-check-label" for="flexCheckDefault">
+                                  All of the above
+                                  </label><br>
+                                 </div>
+                                  <div id="q2-ans" style="display: none;" >
+                                  <input class="form-control" name="data[2]" type="text" placeholder="Please Specify" ><br>
+                                  </div>
+								  <br>
+
+                                 <h6>Q3. Would you be interested in an automated solution that easily educates and trains your users to avoid email, text, and other social engineering threats?*</h6>
+                              <div class="form-check">
+                                 <input class="form-check-input" name="data[2]" required type="radio" value="Yes" id="flexCheckDefault"><label class="form-check-label" for="flexCheckDefault">
+                                    Yes
+                                 </label><br>
+                                 <input class="form-check-input" name="data[2]" required type="radio" value="No" id="flexCheckDefault"><label class="form-check-label" for="flexCheckDefault">
+                                    No
+                                  </label>
+                                  </div>
+								  <br>
+								  <h6>Q4. Does Proofpoint have your permission to reach out to you?*</h6>
+                              <div class="form-check">
+                                 <input class="form-check-input" name="data[3]" required type="radio" value="Yes" id="flexCheckDefault"><label class="form-check-label" for="flexCheckDefault">
+                                    Yes
+                                 </label><br>
+                                 <input class="form-check-input" name="data[3]" required type="radio" value="No" id="flexCheckDefault"><label class="form-check-label" for="flexCheckDefault">
+                                    No
+                                  </label>
+                                  </div>
+                                  <br>
+                                  <div class="" >
+                                    <input type="submit" class="btn btn-primary btn-md btn-block btn-shadow-green"  value="Download Now">
+                                 </div>
+                               </div>
+                              <br>
+
+                               <script src="script.js"></script>  
+						   </form>
+	  </div>
+	  </div>
+	  </div>
+	  
+	  </html>
+	    </body>
+<script>
+
+(function() {
+    const form = document.querySelector('#myForm');
+    const checkboxes = form.querySelectorAll('input[type=checkbox]');
+    const checkboxLength = checkboxes.length;
+    const firstCheckbox = checkboxLength > 0 ? checkboxes[0] : null;
+
+    function init() {
+        if (firstCheckbox) {
+            for (let i = 0; i < checkboxLength; i++) { // imp note i = 0 is for only one required if select 1 or 2 its required for multiple check boxs as we required
+                checkboxes[i].addEventListener('change', checkValidity);
+            }
+
+            checkValidity();
+        }
+    }
+
+    function isChecked() {
+        for (let i = 0; i < checkboxLength; i++) {
+            if (checkboxes[i].checked) return true;
+        }
+
+        return false;
+    }
+
+    function checkValidity() {
+        const errorMessage = !isChecked() ? 'At least one checkbox must be selected.' : '';
+        firstCheckbox.setCustomValidity(errorMessage);
+    }
+
+    init();
+})();
+
+</script>
+    

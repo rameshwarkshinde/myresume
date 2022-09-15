@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html lang="en">
+   <!-- Start :: Head Tag -->
+   <head>
+      <title>Evolve Your CS Strategy and Power Growth Across the Customer Lifecycle</title>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+      <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+      <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha2/js/bootstrap.bundle.min.js"></script>
+      <style>
+         @import url('https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap');
+         body{background-color:#e8ecee;font-family:'Noto Sans',sans-serif;}
+         table{width:100%;}
+         .table-responsive{display:contents;}
+         .box{box-shadow:0 2.8px 2.2px rgba(0,0,0,0.034),0 6.7px 5.3px rgba(0,0,0,0.048),0 12.5px 10px rgba(0,0,0,0.06),0 22.3px 17.9px rgba(0,0,0,0.072),0 41.8px 33.4px rgba(0,0,0,0.086),0 100px 80px rgba(0,0,0,0.12);border-radius:5px;margin-bottom:10px;}
+         .border-style{border-top:10px solid #2079B4;border-bottom:10px solid #2079B4;width:750px;}
+         .img{padding-top:10px;width:280px;}
+         p{font-size:14px;}
+         .btn-primary1{background-color:#2079B4;width:100%;color:#fff;font-size:20px;}
+         .btn-primary1:hover{background-color:#535553;color:#fff;}
+         .calltoaction{align-items:center;background-color:#2079B4;width:254px;color:#fff;border-radius:08px;}
+         .table-responsive{display:contents;}
+         table.leadForm{width:100%;border-collapse:collapse;font-family:'Noto Sans',sans-serif;}
+         table.leadForm th,table.leadForm td{color:#eb0003; padding:5px; text-align:left; font:normal 13px/21px 'Noto Sans',sans-serif;}
+         table.leadForm select{width:150px!important;height:34px;vertical-align:middle;font:normal 13px/22px 'Noto Sans',sans-serif;color:#111;border:1px solid #ccc;}
+         table.leadForm option{font:normal 13px/22px 'Noto Sans',sans-serif;color:#111;vertical-align:top;margin-bottom:10px;}
+         table.leadForm input[type=text]{width:150px;height:30px;border:1px solid #ccc;font:normal 12px/22px 'Noto Sans',sans-serif;color:#111;}
+         table.leadForm input[type=email]{width:150px;height:30px;border:1px solid #ccc;font:normal 12px/22px 'Noto Sans',sans-serif;color:#111;}
+         table.leadForm input[type=tel]{width:150px;height:30px;border:1px solid #ccc;font:normal 12px/22px 'Noto Sans',sans-serif;color:#111;}
+         td.subject:{background-color:#282460;}
+         .formbg{-webkit-border-radius:10px;-moz-border-radius:10px;border-radius:20px;background-color:#;padding:10px;text-align:right;border:2px thin #202020;}
+      </style>
+      <script>
+         (function(){window.addEventListener("load",function(){var b=document.getElementsByClassName("needs-validation");var a=Array.prototype.filter.call(b,function(c){c.addEventListener("submit",function(d){if(c.checkValidity()===false){d.preventDefault();d.stopPropagation()}c.classList.add("was-validated")},false)})},false)})();
+         //custom real-time trigger	
+         !(function (e) {
+         "use strict";
+         e.fn.jbvalidator = function (t) {
+           t = e.extend({}, { language: "", errorMessage: !0, successClass: !1, html5BrowserDefault: !1, validFeedBackClass: "valid-feedbak", invalidFeedBackClass: "invalid-feedback", validClass: "is-valid", invalidClass: "is-invalid" }, t);
+           let a = {
+               HTML5: {
+                   typeMismatch: { email: "Enter a valid email address", },
+                   tooLong: "Please lengthen this text to %s characters or less (you are currently using %s characters).",
+                   tooShort: "Enter a valid phone number",
+                   badInput: { number: "Please enter a number." },
+               },
+           };
+           const i = "input,select";
+           let n = 0;
+           t.language &&
+               e.getJSON(t.language, function (e) {
+                   a = e;
+               }),
+               e(this).on("submit", function (t) {
+                   (n = 0),
+                       e(this)
+                           .find(i)
+                           .each((e, a) => {
+                               l(a, t);
+                           }),
+                       n && (t.preventDefault(), t.stopPropagation());
+               }),
+               e(this)
+                   .find(i)
+                   .each((t, a) => {
+                       e(a).on("input", function (t) {
+                           if ((l(this, t), c(a, "data-v-equal"))) {
+                               let t = e(a).attr("data-v-equal");
+                               e(t).on("input", function () {
+                                   let t = e(this).attr("id");
+                                   e('[data-v-equal="#' + t + '"]').trigger("input");
+                               });
+                           }
+                       });
+                   });
+           let l = function (e, a) {
+                   e.setCustomValidity(""),
+                       !1 !== e.checkValidity()
+                           ? Object.values(o).map((t) => {
+                                 let i = t.call(t, e, a);
+                                 i && e.setCustomValidity(i);
+                             })
+                           : t.html5BrowserDefault || e.setCustomValidity(u(e)),
+                       !1 === e.checkValidity() ? (r(e, e.validationMessage), n++) : s(e);
+               },
+               r = function (a, i) {
+                   if ((e(a).removeClass(t.validClass), e(a).addClass(t.invalidClass), (i = e(a).data("vMessage") ?? i), t.errorMessage)) {
+                       let n = e(a).parent();
+                       if (e(n).length) {
+                           let a = e(n).find("." + t.invalidFeedBackClass);
+                           e(a).length ? e(a).html(i) : e(n).append('<div class="' + t.invalidFeedBackClass + '">' + i + "</div>");
+                       }
+                   }
+               },
+               s = function (a) {
+                   e(a).removeClass(t.invalidClass), t.successClass && e(a).addClass(t.validClass);
+               },
+         
+               o = {
+                   customMin: function (t) {
+                       if (c(t, "data-v-min")) {
+                           let i = e(t).data("vMin"),
+                               n = e(t).val();
+                           if (isNaN(n) && (e(t).prop("require") || n.length > 0)) return a.number;
+                           if (n < i && (e(t).prop("require") || n.length > 0)) return a.minValue.sprintf(i);
+                       }
+                       return "";
+                   },
+                   customMax: function (t) {
+                       if (c(t, "data-v-max")) {
+                           let i = e(t).data("vMax"),
+                               n = e(t).val();
+                           if (isNaN(n) && (e(t).prop("require") || n.length > 0)) return a.number;
+                           if (n > i && (e(t).prop("require") || n.length > 0)) return a.maxValue.sprintf(i);
+                       }
+                       return "";
+                   },
+                   customMinLength: function (t) {
+                       if (c(t, "data-v-min-length")) {
+                           let i = e(t).data("vMinLength"),
+                               n = e(t).val().length;
+                           if (n < i && (e(t).prop("require") || n > 0)) return a.minLength.sprintf(i, n);
+                       }
+                       return "";
+                   },
+                   customMaxLength: function (t) {
+                       if (c(t, "data-v-max-length")) {
+                           let i = e(t).data("vMaxLength"),
+                               n = e(t).val().length;
+                           if (n > i && (e(t).prop("require") || n > 0)) return a.maxLength.sprintf(i, n);
+                       }
+                       return "";
+                   },
+               },
+               u = function (t) {
+                   if (t.validity.valueMissing) {
+                       if ("INPUT" === t.tagName) return void 0 === a.HTML5.valueMissing.INPUT[t.type] ? a.HTML5.valueMissing.INPUT.default : a.HTML5.valueMissing.INPUT[t.type];
+                       if (void 0 !== a.HTML5.valueMissing[t.tagName]) return a.HTML5.valueMissing[t.tagName];
+                   } else if (t.validity.typeMismatch) {
+                       if (void 0 !== a.HTML5.typeMismatch[t.type]) return a.HTML5.typeMismatch[t.type];
+                   } 
+         else {
+                       if (t.validity.tooLong) {
+                           let i = t.getAttribute("maxlength") ?? null,
+                               n = e(t).val();
+                           return a.HTML5.tooLong.sprintf(i, n.length);
+                       }
+                       if (t.validity.tooShort) {
+                           let i = t.getAttribute("minlength") ?? null,
+                               n = e(t).val();
+                           return a.HTML5.tooShort.sprintf(i, n.length);
+                       }
+                       if (t.validity.patternMismatch) {
+                           if (c(t, "pattern") && c(t, "title")) return e(t).attr("title");
+                           let i = t.getAttribute("pattern") ?? null;
+                           return a.HTML5.patternMismatch.sprintf(i);
+                       }
+                       if (t.validity.badInput && void 0 !== a.HTML5.badInput[t.type]) return a.HTML5.badInput[t.type];
+                   }
+                   return t.validationMessage ?? "";
+               };
+           function c(t, a, i = "") {
+               let n = e(t).attr(a);
+               if (void 0 !== n && !1 !== n) {
+                   if (!i) return !0;
+                   if (i === n) return !0;
+               }
+               return !1;
+           }
+           return (
+               (String.prototype.sprintf = function () {
+                   for (var e = this.toString(), t = 0; t < arguments.length; t++) {
+                       var a = parseFloat(arguments[t]);
+                       if (a || 0 == a) {
+                           var i = a > 1 || 0 == a ? "s" : "";
+                           e = e.replace(/%s {1}(\w+)\(s\){1}/, "%s $1" + i);
+                       }
+                       e = e.replace("%s", arguments[t]);
+                   }
+                   return e;
+               }),
+               {
+                   validator: o,
+                   errorTrigger: function (e, t) {
+                       "object" == typeof e && (e = e[0]), e.setCustomValidity(t), r(e, e.validationMessage);
+                   },
+               }
+           );
+         };
+         })(jQuery);
+         
+         $(function (){
+         
+           let validator = $('form.needs-validation').jbvalidator({
+               errorMessage: true,
+               successClass: true,
+           });
+         
+         
+           let validatorServerSide = $('form.validatorServerSide').jbvalidator({
+               errorMessage: true,
+               successClass: false,
+           });
+         
+           //serverside
+           $(document).on('submit', '.validatorServerSide', function(){
+         
+               $.ajax({
+                   method:"get",
+                   url:"test.json",
+                   data: $(this).serialize(),
+                   success: function (data){
+                       if(data.status === 'error') {
+                           validatorServerSide.errorTrigger($('[name=username]'), data.message);
+                       }
+                   }
+               })
+         
+               return false;
+           });
+         })
+      </script>
+   </head>
+   <!-- End :: Head Tag -->
+   <!-- Start :: Content -->
+   <body>
+      <div class="container box border-style" style="background-color:#fff;margin-top:3%;">
+         <!-- Start :: Brand Logo & Sponsorer Logo -->
+         <table width="100%" cellspacing="0" cellpadding="5" style="border-bottom:1px solid #c0c0c0;">
+            <tr>
+               <td align="left">
+                  <img src="https://www.ebooksorbits.com/wp-content/uploads/2021/09/logo-1-300x131.png" alt="HealthcareTech Alert" style="padding-top: 15px;" width="180">
+               </td>
+			   <td align="right">
+                  <img src="https://media.ebooksorbits.com/resources/Gainsight-Logo.jpg" alt="HealthcareTech Alert" style="padding-top: 5px;" width="180">
+               </td>
+            </tr>
+         </table>
+         <!-- End :: Brand Logo & Sponsorer Logo -->
+         <!-- Start :: Title, Content, Form & Image -->
+         <table cellspacing="0" cellpadding="10" border="0">
+            <tbody>
+               <tr>
+                  <!-- Start :: Asset Image -->
+                  <td width="40%" height="20" align="left" valign="top" style="padding-top:20px;">
+                     <img src="https://media.ebooksorbits.com/resources/AP32737-02-Gainsight-Customer-Success-ABM-EN-WB-1.PNG" width="100%" alt="Molecular Technology Video">
+                  </td>
+                  <!-- End :: Asset Image -->
+                  <!-- Start :: Form -->
+                  <td rowspan="2" width="46%" valign="top" align="left" style="padding-top:20px; padding-bottom: 20px;">
+                     <div class="formbg" style="box-shadow:0 0 01px 01px #24A9E0;">
+                        <form class="form-group needs-validation" novalidate action="AP32737-02-Gainsight-Customer-Success-ABM-EN-WB-1-sendmail.php" method="post">
+                           <table class="leadForm" width="100%" colspan="2">
+                              <div>
+                                 <tr>
+                                    <th>
+                                       <span>First Name*</span>
+                                    </th>
+                                    <td width="50%">
+                                       <input type="text" class="form-control form-control-sm" id="validationDefault01" aria-label="Search" aria-labelledby="firstname" name="firstname" required>
+                                    </td>
+                                 </tr>
+                                 <tr>
+                                    <th>
+                                       <span>Last Name*</span>
+                                    </th>
+                                    <td>
+                                       <input type="text" class="form-control form-control-sm" name="data[0]" id="validationDefault02" aria-label="Search" aria-labelledby="lastname" required>
+                                    </td>
+                                 </tr>
+                                 <tr>
+                                    <th>
+                                       <span for="Email" class="col-form-label form-color">Corporate Email*</span>
+                                    </th>
+                                    <td>
+                                       <input type="email" name="data[1]" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$" placeholder="" class="form-control form-control-sm" id="validationDefault03" required> <span style="position:relative" class="invalid-feedback">
+                                       Voer een geldig e-mailadres in
+                                       </span>
+                                    </td>
+                                 </tr>
+                                 <tr>
+                                    <th>
+                                       <span>Company Name*</span>
+                                    </th>
+                                    <td>
+                                       <input type="text" name="data[2]"  class="form-control form-control-sm" id="validationDefault05" aria-label="Search" aria-labelledby="Company"  required>
+                                    </td>
+                                 </tr>
+                                 <tr>
+                                    <th>
+                                       <span>Is your organization currently evaluating customer success management platforms or products? *</span>
+                                    </th>
+                                    <td>
+                                       <select class="form-control form-control-sm custom-select" name="data[3]"  aria-label="Search" aria-labelledby="Job Function" required>
+                                          <option value="" selected>Select</option>
+                                          <option value="Yes">Yes</option>
+<option value="No">No</option>
+<option value="Not sure">Not sure</option>
+                                       </select>
+                                    </td>
+                                 </tr>
+								 
+								 
+								   <tr>
+                                    <th>
+                                       <span>When do you anticipate making a decision?*</span>
+                                    </th>
+                                    <td>
+                                       <select class="form-control form-control-sm custom-select" name="data[4]"  aria-label="Search" aria-labelledby="Job Function" required>
+                                          <option value="" selected>Select</option>
+                                          <option value="Within the next 6 months">Within the next 6 months</option>
+<option value="6-12 months">6-12 months</option>
+<option value="12+ months">12+ months</option>
+<option value="Not sure">Not sure</option>
+<option value="Not at this time">Not at this time</option>
+                                       </select>
+                                    </td>
+                                 </tr>
+                                
+                                
+                               
+                              </div>
+                           </table>
+                           <div id="ukgdpr" style="color:#333;padding:5px;margin-top:10px;text-align:left;font:9px/15px Segoe,'Segoe UI','DejaVu Sans','Trebuchet MS',Verdana,'sans-serif'">
+                              <div class="form-check custom-control custom-checkbox">
+                                 <input class="form-check-input custom-control-input" name="data[5]" type="checkbox" value="Yes" id="invalidCheck" required >
+                                 <label class="form-check-label custom-control-label" for="invalidCheck" style="padding-top:03px;"> I would like to receive information from suppliers sponsoring this content and willing to share the information above with Gainsight.
+<br>
+								 <span style="font-size:8px;" >
+								 Privacy Disclaimer: This is cohosted by Ebooksorbits and Oracle. Both companies will process your personal information. Each party will be responsible for managing their own use of your personal information.By filling and submitting this form you understand and agree that Oracle processes your personal information in accordance with the Oracle Privacy Policy. Additional details regarding Oracle’s collection and use of your personal information, including information about access, retention, rectification, deletion, security, cross-border transfers and other topics, is available in the Oracle Privacy Policy.</span></label> 
+                              </div>
+                           </div>
+                           <div align="center" style="margin-left:10px; padding-top: 5%;">
+                              <button type="submit" value="" aria-label="download" class="btn btn-primary1 calltoaction" style="padding-bottom: 3%;">Submit</button>
+                           </div>
+                        </form>
+                     </div>
+                  </td>
+                  <!-- End :: Form -->
+               </tr>
+               <!-- start :: Title, Content -->
+               <tr>
+                  <td valign="top" align="left">
+                     <p style="font-size: 14px; line-height: 140%;">
+                        <b style="color: rgb(35,73,109);font-family: Times New Roman;font-size: 20px;line-height: 26px;">
+						Evolve Your CS Strategy and Power Growth Across the Customer Lifecycle
+                        </b><br>
+                        <span style="color: rgb(35,73,109);font-family: Times New Roman;font-size: 16px;line-height: 22px;">
+                       
+                        </span>
+                     </p>
+                  </td>
+               </tr>
+               <!-- End :: Title, Content -->
+            </tbody>
+         </table>
+         <!-- End :: Title, Content, Form & Image -->
+         <!-- Start :: Copyright -->
+         <table style="border-top:1px solid #c0c0c0">
+            <tbody class="table table-borderless table-responsive">
+               <td>
+                  <div style="padding-top:0;font-size:10.5px;text-align:center;">
+                     <a href="https://www.ebooksorbits.com/unsubscribe/">Unsubscribe</a> | <a href="https://www.ebooksorbits.com/privacy-policy/">Privacy Policy</a><br>
+                     Copyright &copy; 2022 EBooksOrbits.com. All Rights Reserved.
+                  </div>
+               </td>
+            </tbody>
+         </table>
+         <!-- End :: Copyright -->
+      </div>
+   </body>
+   <!-- End :: Content -->
+</html>

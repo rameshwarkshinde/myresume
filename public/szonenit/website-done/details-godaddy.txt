@@ -1,0 +1,28 @@
+godaddy.com
+username : ramkshinde
+password : jan@19933
+
+=========================================================================================
+cpanel link
+https://bom1plzcpnl493926.prod.bom1.secureserver.net:2083/logout/?locale=en
+
+username: k3jtc6nthq7s
+password : Jan@1993
+========================================================================================
+webmail
+https://sso.godaddy.com/v1/login?realm=pass&app=ox
+
+username : hpillay@szoneitsol.com
+password : szoneit@2022
+
+
+recovery mail
+williamsolivia325@gmail.com
+
+===========================================================================
+
+
+
+
+email access
+https://sso.secureserver.net/login?app=email&realm=pass

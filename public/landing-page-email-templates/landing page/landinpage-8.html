@@ -1,0 +1,534 @@
+
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>The Key to Transforming Manufacturing</title>
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.min.js" integrity="sha384-skAcpIdS7UcVUC05LJ9Dxay8AXcDYfBJqt1CJ85S/CFujBsIzCIv+l9liuYLaMQ/" crossorigin="anonymous"></script>
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
+	  
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+      <script>
+         $(document).ready(function () {
+         $('#Country').on('change', function () {
+              if (this.value == 'US'){
+               $('#new').show();
+               $('#new2').hide();
+               $('#new1').hide();              
+         document.getElementById("State").required = true;
+       
+         }else{
+               $('#new2').hide();
+               $('#new').hide();
+               $('#new1').show();        
+         document.getElementById("State").required =  false;
+       
+                }
+         });
+		 
+		 
+//country dropdown id
+       $('#Country').on('change', function () {
+          if (this.value == 'US') {
+              
+              //optin checkbox id
+              $('#optin_checkbox').prop('checked', true);
+            
+          }
+          else {
+            
+            $('#optin_checkbox').prop('checked', false);
+          }
+       });		 
+          
+         }); 
+
+
+      </script>
+   </head>
+   <body>
+      <div class="container">
+         <div class="wrapper">
+            <div class="row text-left p-4" >
+               <div class="col-lg-12">
+                  <img style="margin-left:150px"src="https://resources.techsterhub.com/ebooks/Indi/GrabCAD/GrabCAD.png" width="10%"  alt="AWS Logo">
+                  
+               </div>
+            </div>
+			<div class="row offset-lg-1 " >
+            
+               <div class=" offset-lg-1 col-lg-6">
+                  <div class="row text-justify  ">
+                     <div class="col-lg-12" >
+					 <h2 class="text-center"><b>The Key to Transforming Manufacturing</b></h2>
+					  <img class="text-center" src="https://resources.techsterhub.com/ebooks/Indi/GrabCAD/GrabCAD-AMES-Report-Cover.png" width="90%" style="border-radius:15px;margin-left:10px" alt="">
+                        <p class="text-grey" style="font-size: 16px; line-height: 24.4px; font-family: 'book antiqua', palatino;" ><br>
+                      Additive manufacturing is in a state of evolution; with advanced hardware and material sciences, AM is on the cusp of radically transforming from prototyping to end-part production! However, additive manufacturing is missing a key component that prevents it from taking its place alongside traditional manufacturing as another means of production on the factory floor.<br><br>
+What if there was a solution to this missing component that not only allowed additive manufacturing to reach its maximum potential but also integrate with current manufacturing workflows?<br><br>
+We dive into that key issue and the solution in this industry report that explores the current state of additive manufacturing, the problems limiting additive’s ability to scale, and how one software platform could be the key to true scalable additive manufacturing.
+                        </p>
+                     </div>
+                  </div>
+               </div>
+               <div class="col-lg-3" >
+                  <form  method="POST" class="p-3" action="The-Key-to-Transforming-Additive-Manufacturing-Interactable-sendmail.php" style="background-color:#F3F4F6;border-radius:15px">
+                    <p style="font-size:14px">Fill out the Form and click the download button to download your AMES Report.</p>
+					
+                     <input type="text" class="form-control mt-2"  placeholder="First Name" name="firstname" required>
+                     
+                    
+                     <input type="text" class="form-control mt-2"  placeholder="Last Name"  name="data[0]" required>
+                     
+                    
+                     <input type="email" class="form-control mt-2" placeholder="Email" name="data[1]" required>
+                     
+					  
+                     <input type="text" class="form-control mt-2"  placeholder="Phone" name="data[2]" required>
+                       
+                      
+                     <input type="text" class="form-control mt-2"  placeholder="Company" name="data[3]" required>
+                     
+                      
+                <label for="" class="text-dark mt-2">Role
+                     *</label> 
+                     <select class="form-control" name="data[4]" required>
+                        <option value="">Select...</option>
+                       <option value="Administrator/Principal/Superintendent">Administrator/Principal/Superintendent</option>
+<option value="Biomedical Engineer">Biomedical Engineer</option>
+<option value="Clevel Executive">C-level Executive</option>
+<option value="Clinical/PreClinical">Clinical/PreClinical</option>
+<option value="Dean/Department Head">Dean/Department Head</option>
+<option value="Dentist">Dentist</option>
+<option value="Designer">Designer</option>
+<option value="Educator">Educator</option>
+<option value="Engineer">Engineer</option>
+<option value="[ae eu">Equipment manufacturer</option>
+<option value="Lab Owner">Lab Owner</option>
+<option value="Lab Technician">Lab Technician</option>
+<option value="Marketing">Marketing</option>
+<option value="Medical Education and Training">Medical Education and Training</option>
+<option value="Other">Other</option>
+<option value="Parent">Parent</option>
+<option value="Practicing Physician">Practicing Physician</option>
+<option value="President/Provost">President/Provost</option>
+
+<option value="Prosthetist/Orthotist">Prosthetist/Orthotist</option>
+<option value="Purchasing">Purchasing</option>
+<option value="Quality">Quality</option>
+<option value="R&D/Engineering">R&D/Engineering</option>
+<option value="sales">Sales</option>
+<option value="Senior management/administration">Senior management/administration</option>
+<option value="Training">Training</option>
+<option value="Student">Student</option>
+
+                     </select>
+					 
+					
+                     
+                     <label for="" class="text-dark mt-2">Country *</label> 
+                     <select class="form-control" name="data[6]" id="Country" required>
+                        <option value="">Select...</option>
+                       <Option Value="Af">Afghanistan</Option>
+<Option Value="Ax">Aland Islands</Option>
+<Option Value="Al">Albania</Option>
+<Option Value="Dz">Algeria</Option>
+<Option Value="As">American Samoa</Option>
+<Option Value="Ad">Andorra</Option>
+<Option Value="Ao">Angola</Option>
+<Option Value="Ai">Anguilla</Option>
+<Option Value="Aq">Antarctica</Option>
+<Option Value="Ag">Antigua And Barbuda</Option>
+<Option Value="Ar">Argentina</Option>
+<Option Value="Am">Armenia</Option>
+<Option Value="Aw">Aruba</Option>
+<Option Value="Au">Australia</Option>
+<Option Value="At">Austria</Option>
+<Option Value="Az">Azerbaijan</Option>
+<Option Value="Bs">Bahamas</Option>
+<Option Value="Bh">Bahrain</Option>
+<Option Value="Bd">Bangladesh</Option>
+<Option Value="Bb">Barbados</Option>
+<Option Value="By">Belarus</Option>
+<Option Value="Be">Belgium</Option>
+<Option Value="Bz">Belize</Option>
+<Option Value="Bj">Benin</Option>
+<Option Value="Bm">Bermuda</Option>
+<Option Value="Bt">Bhutan</Option>
+<Option Value="Bo">Bolivia</Option>
+<Option Value="Bq">Bonaire, Sint Eustatius And Saba</Option>
+<Option Value="Ba">Bosnia And Herzegovina</Option>
+<Option Value="Bw">Botswana</Option>
+<Option Value="Bv">Bouvet Island</Option>
+<Option Value="Br">Brazil</Option>
+<Option Value="Io">British Indian Ocean Territory</Option>
+<Option Value="Bn">Brunei Darussalam</Option>
+<Option Value="Bg">Bulgaria</Option>
+<Option Value="Bf">Burkina Faso</Option>
+<Option Value="Bi">Burundi</Option>
+<Option Value="Kh">Cambodia</Option>
+<Option Value="Cm">Cameroon</Option>
+<Option Value="Ca">Canada</Option>
+<Option Value="Cv">Cape Verde</Option>
+<Option Value="Ky">Cayman Islands</Option>
+<Option Value="Cf">Central African Republic</Option>
+<Option Value="Td">Chad</Option>
+<Option Value="Cl">Chile</Option>
+<Option Value="Cn">China</Option>
+<Option Value="Cx">Christmas Island</Option>
+<Option Value="Cc">Cocos (Keeling) Islands</Option>
+<Option Value="Co">Colombia</Option>
+<Option Value="Km">Comoros</Option>
+<Option Value="Cg">Congo</Option>
+<Option Value="Ck">Cook Islands</Option>
+<Option Value="Cr">Costa Rica</Option>
+<Option Value="Ci">Cote D'Ivoire</Option>
+<Option Value="Hr">Croatia</Option>
+<Option Value="Cu">Cuba</Option>
+<Option Value="Cw">Curacao</Option>
+<Option Value="Cy">Cyprus</Option>
+<Option Value="Cz">Czech Republic</Option>
+<Option Value="Cd">Democratic Republic Of The Congo</Option>
+<Option Value="Dk">Denmark</Option>
+<Option Value="Dj">Djibouti</Option>
+<Option Value="Dm">Dominica</Option>
+<Option Value="Do">Dominican Republic</Option>
+<Option Value="Ec">Ecuador</Option>
+<Option Value="Eg">Egypt</Option>
+<Option Value="Sv">El Salvador</Option>
+<Option Value="Gq">Equatorial Guinea</Option>
+<Option Value="Er">Eritrea</Option>
+<Option Value="Ee">Estonia</Option>
+<Option Value="Et">Ethiopia</Option>
+<Option Value="Fk">Falkland Islands (Malvinas)</Option>
+<Option Value="Fo">Faroe Islands</Option>
+<Option Value="Fj">Fiji</Option>
+<Option Value="Fi">Finland</Option>
+<Option Value="Fr">France</Option>
+<Option Value="Gf">French Guiana</Option>
+<Option Value="Pf">French Polynesia</Option>
+<Option Value="Tf">French Southern Territories</Option>
+<Option Value="Ga">Gabon</Option>
+<Option Value="Gm">Gambia</Option>
+<Option Value="Ge">Georgia</Option>
+<Option Value="De">Germany</Option>
+<Option Value="Gh">Ghana</Option>
+<Option Value="Gi">Gibraltar</Option>
+<Option Value="Mg">Glorioso Islands</Option>
+<Option Value="Gb">Great Britain</Option>
+<Option Value="Gr">Greece</Option>
+<Option Value="Gl">Greenland</Option>
+<Option Value="Gd">Grenada</Option>
+<Option Value="Gp">Guadeloupe</Option>
+<Option Value="Gu">Guam</Option>
+<Option Value="Gt">Guatemala</Option>
+<Option Value="Gg">Guernsey</Option>
+<Option Value="Gn">Guinea</Option>
+<Option Value="Gw">Guinea-Bissau</Option>
+<Option Value="Gy">Guyana</Option>
+<Option Value="Ht">Haiti</Option>
+<Option Value="Hm">Heard Island And Mcdonald Islands</Option>
+<Option Value="Va">Holy See (Vatican City State)</Option>
+<Option Value="Hn">Honduras</Option>
+<Option Value="Hk">Hong Kong</Option>
+<Option Value="Hu">Hungary</Option>
+<Option Value="Is">Iceland</Option>
+<Option Value="In">India</Option>
+<Option Value="Id">Indonesia</Option>
+<Option Value="Ir">Iran, Islamic Republic Of</Option>
+<Option Value="Iq">Iraq</Option>
+<Option Value="Ie">Ireland</Option>
+<Option Value="Im">Isle Of Man</Option>
+<Option Value="Il">Israel</Option>
+<Option Value="It">Italy</Option>
+<Option Value="Jm">Jamaica</Option>
+<Option Value="Jp">Japan</Option>
+<Option Value="Je">Jersey</Option>
+<Option Value="Jo">Jordan</Option>
+<Option Value="Kz">Kazakhstan</Option>
+<Option Value="Ke">Kenya</Option>
+<Option Value="Ki">Kiribati</Option>
+<Option Value="Kr">Korea</Option>
+<Option Value="Kr">Korea, South</Option>
+<Option Value="Kp">Korea, Democratic People'S Republic Of</Option>
+<Option Value="Kw">Kuwait</Option>
+<Option Value="Kg">Kyrgyzstan</Option>
+<Option Value="La">Lao People'S Democratic Republic</Option>
+<Option Value="Lv">Latvia</Option>
+<Option Value="Lb">Lebanon</Option>
+<Option Value="Ls">Lesotho</Option>
+<Option Value="Lr">Liberia</Option>
+<Option Value="Ly">Libyan Arab Jamahiriya</Option>
+<Option Value="Li">Liechtenstein</Option>
+<Option Value="Lt">Lithuania</Option>
+<Option Value="Lu">Luxembourg</Option>
+<Option Value="Mo">Macao</Option>
+<Option Value="Mk">Macedonia, The Former Yugoslav Republic Of</Option>
+<Option Value="Mk">Macedonia</Option>
+<Option Value="Mg">Madagascar</Option>
+<Option Value="Mw">Malawi</Option>
+<Option Value="My">Malaysia</Option>
+<Option Value="Mv">Maldives</Option>
+<Option Value="Ml">Mali</Option>
+<Option Value="Mt">Malta</Option>
+<Option Value="Mh">Marshall Islands</Option>
+<Option Value="Mq">Martinique</Option>
+<Option Value="Mr">Mauritania</Option>
+<Option Value="Mu">Mauritius</Option>
+<Option Value="Yt">Mayotte</Option>
+<Option Value="Mx">Mexico</Option>
+<Option Value="Fm">Micronesia, Federated States Of</Option>
+<Option Value="Md">Moldova, Republic Of</Option>
+<Option Value="Mc">Monaco</Option>
+<Option Value="Mn">Mongolia</Option>
+<Option Value="Me">Montenegro</Option>
+<Option Value="Ms">Montserrat</Option>
+<Option Value="Ma">Morocco</Option>
+<Option Value="Mz">Mozambique</Option>
+<Option Value="Mm">Myanmar</Option>
+<Option Value="Na">Namibia</Option>
+<Option Value="Nr">Nauru</Option>
+<Option Value="Np">Nepal</Option>
+<Option Value="Nl">Netherlands</Option>
+<Option Value="An">Netherlands Antilles</Option>
+<Option Value="Nc">New Caledonia</Option>
+<Option Value="Nz">New Zealand</Option>
+<Option Value="Ni">Nicaragua</Option>
+<Option Value="Ne">Niger</Option>
+<Option Value="Ng">Nigeria</Option>
+<Option Value="Nu">Niue</Option>
+<Option Value="Nf">Norfolk Island</Option>
+<Option Value="Mp">Northern Mariana Islands</Option>
+<Option Value="No">Norway</Option>
+<Option Value="Om">Oman</Option>
+<Option Value="Pk">Pakistan</Option>
+<Option Value="Pw">Palau</Option>
+<Option Value="Ps">Palestinian Territory, Occupied</Option>
+<Option Value="Pa">Panama</Option>
+<Option Value="Pg">Papua New Guinea</Option>
+<Option Value="Py">Paraguay</Option>
+<Option Value="Pe">Peru</Option>
+<Option Value="Ph">Philippines</Option>
+<Option Value="Pn">Pitcairn</Option>
+<Option Value="Pl">Poland</Option>
+<Option Value="Pt">Portugal</Option>
+<Option Value="Pr">Puerto Rico</Option>
+<Option Value="Qa">Qatar</Option>
+<Option Value="Re">Reunion</Option>
+<Option Value="Ro">Romania</Option>
+<Option Value="Ru">Russia</Option>
+<Option Value="Rw">Rwanda</Option>
+<Option Value="Bl">Saint Barthelemy</Option>
+<Option Value="Sh">Saint Helena, Ascension And Tristan Da Cunha</Option>
+<Option Value="Kn">Saint Kitts And Nevis</Option>
+<Option Value="Lc">Saint Lucia</Option>
+<Option Value="Mf">Saint Martin (French Part)</Option>
+<Option Value="Pm">Saint Pierre And Miquelon</Option>
+<Option Value="Vc">Saint Vincent And The Grenadines</Option>
+<Option Value="Ws">Samoa</Option>
+<Option Value="Sm">San Marino</Option>
+<Option Value="St">Sao Tome And Principe</Option>
+<Option Value="Sa">Saudi Arabia</Option>
+<Option Value="Sn">Senegal</Option>
+<Option Value="Rs">Serbia</Option>
+<Option Value="Sc">Seychelles</Option>
+<Option Value="Sl">Sierra Leone</Option>
+<Option Value="Sg">Singapore</Option>
+<Option Value="Sx">Sint Maarten (Dutch Part)</Option>
+<Option Value="Sk">Slovakia</Option>
+<Option Value="Si">Slovenia</Option>
+<Option Value="Sb">Solomon Islands</Option>
+<Option Value="So">Somalia</Option>
+<Option Value="Za">South Africa</Option>
+<Option Value="Gs">South Georgia And The South Sandwich Islands</Option>
+<Option Value="Es">Spain</Option>
+<Option Value="Lk">Sri Lanka</Option>
+<Option Value="Sd">Sudan</Option>
+<Option Value="Sr">Suriname</Option>
+<Option Value="Sj">Svalbard And Jan Mayen</Option>
+<Option Value="Sz">Swaziland</Option>
+<Option Value="Se">Sweden</Option>
+<Option Value="Ch">Switzerland</Option>
+<Option Value="Sy">Syrian Arab Republic</Option>
+<Option Value="Tw">Taiwan</Option>
+<Option Value="Tj">Tajikistan</Option>
+<Option Value="Tz">Tanzania</Option>
+<Option Value="Th">Thailand</Option>
+<Option Value="Tl">Timor-Leste</Option>
+<Option Value="Tg">Togo</Option>
+<Option Value="Tk">Tokelau</Option>
+<Option Value="To">Tonga</Option>
+<Option Value="Tt">Trinidad And Tobago</Option>
+<Option Value="Tn">Tunisia</Option>
+<Option Value="Tr">Turkey</Option>
+<Option Value="Tm">Turkmenistan</Option>
+<Option Value="Tc">Turks And Caicos Islands</Option>
+<Option Value="Tv">Tuvalu</Option>
+<Option Value="Ug">Uganda</Option>
+<Option Value="Ua">Ukraine</Option>
+<Option Value="Ae">United Arab Emirates</Option>
+<Option Value="Us">United States</Option>
+<Option Value="Uk">United Kingdom</Option>
+<Option Value="Um">United States Minor Outlying Islands</Option>
+<Option Value="Uy">Uruguay</Option>
+<Option Value="Uz">Uzbekistan</Option>
+<Option Value="Vu">Vanuatu</Option>
+<Option Value="Ve">Venezuela</Option>
+<Option Value="Vn">Viet Nam</Option>
+<Option Value="Vn">Vietnam</Option>
+<Option Value="Vg">Virgin Islands, British</Option>
+<Option Value="Vi">Virgin Islands, U.S.</Option>
+<Option Value="Wf">Wallis And Futuna</Option>
+<Option Value="Eh">Western Sahara</Option>
+<Option Value="Ye">Yemen</Option>
+<Option Value="Zm">Zambia</Option>
+<Option Value="Zw">Zimbabwe</Option>
+
+                        
+
+                           
+                     </select>
+                    
+                     
+					  <label for="" class="text-dark mt-2">State
+                     *</label> 
+                     <select class="form-control" name="data[5]" required>
+                        <option value="">Select...</option>
+                                                 <option value="AL">Alaska</option>
+                           <option value="AR">Alabama</option>
+                           <option value="AZ">Arkansas</option>
+                           <option value="CA">Arizona</option>
+                           <option value="CO">California</option>
+                           <option value="CT">Colorado</option>
+                           <option value="DC">Connecticut</option>
+                           <option value="DE">Dist. Of Columbia</option>
+                           <option value="FL">Delaware</option>
+                           <option value="GA">Florida</option>
+                           <option value="HI">Georgia</option>
+                           <option value="IA">Hawaii</option>
+                           <option value="ID">Iowa</option>
+                           <option value="IL">Idaho</option>
+                           <option value="IN">Illinois</option>
+                           <option value="KS">Indiana</option>
+                           <option value="KY">Kansas</option>
+                           <option value="LA">Kentucky</option>
+                           <option value="MA">Louisiana</option>
+                           <option value="MD">Massachusetts</option>
+                           <option value="ME">Maryland</option>
+                           <option value="MI">Maine</option>
+                           <option value="MN">Michigan</option>
+                           <option value="MO">Minnesota</option>
+                           <option value="MS">Missouri</option>
+                           <option value="MT">Mississippi</option>
+                           <option value="NC">Montana</option>
+                           <option value="ND">North Carolina</option>
+                           <option value="NE">North Dakota</option>
+                           <option value="NH">Nebraska</option>
+                           <option value="NJ">New Hampshire</option>
+                           <option value="NM">New Jersey</option>
+                           <option value="NV">New Mexico</option>
+                           <option value="NY">Nevada</option>
+                           <option value="OH">New York</option>
+                           <option value="OK">Ohio</option>
+                           <option value="OR">Oklahoma</option>
+                           <option value="PA">Oregon</option>
+                           <option value="RI">Pennsylvania</option>
+                           <option value="SC">Rhode Island</option>
+                           <option value="SD">South Carolina</option>
+                           <option value="TN">South Dakota</option>
+                           <option value="TX">Tennessee</option>
+                           <option value="UT">Texas</option>
+                           <option value="VA">Utah</option>
+                           <option value="VT">Virginia</option>
+                           <option value="WA">Vermont</option>
+                           <option value="WI">Washington</option>
+                           <option value="WV">Wisconsin</option>
+                           <option value="WY">West Virginia</option>
+                           <option value="Wyoming">Wyoming</option>
+                           <option value="Non_Us">Not Required (Non US)</option>
+
+                     </select>
+                   
+                
+                    
+                     <label for="" class="text-dark mt-2">Industry *</label> 
+                     <select class="form-control" name="data[7]" required>
+                        <option value="">Select...</option>
+                       <option value="Aerospace">Aerospace</option>
+<option value="Architecture">Architecture</option>
+<option value="Arts and Entertainment">Arts and Entertainment</option>
+<option value="Automotive">Automotive</option>
+<option value="Commercial Products">Commercial Products</option>
+<option value="Commercial Products">Consumer Electronics</option>
+<option value="Consumer Goods">Consumer Goods</option>
+<option value="Dental">Dental</option>
+<option value="Design Studio">Design Studio</option>
+<option value="Education">Education</option>
+<option value="Engineering Consulting Service">Engineering Consulting Service</option>
+<option value="Government\miilitary">Government\miilitary</option>
+<option value="Industrial Equipment">Industrial Equipment</option>
+<option value="Jewelry">Jewelry</option>
+<option value="Medical Device or Equipment">Medical Device or Equipment</option>
+<option value="Other">Other</option>
+<option value="Reseller">Reseller</option>
+<option value="Service Bureau">Service Bureau</option>
+<option value="Toys">Toys</option>
+
+                     </select>
+                    <br>
+                    
+                     <center>
+                        <input type="submit" class="btn btn-primary btn-md btn-block" style="background-color: #3077E2" value="Download">
+                     </center>
+                 </form>
+				  </div>
+               </div>
+            </div>
+		
+            </div>
+         
+      
+	  	<center>
+			 <footer class="footer">
+            <div id="footer-container" style="background-color:#F3F4F6; padding-top:15px;padding-bottom:15px;margin-top:30px">
+                <div id="social-footer-wrapper">
+                    
+                    
+                        <a href="https://twitter.com/grabcad" style="text-decoration:none;color:#606060;"><img src="http://info.grabcad.com/rs/008-JLC-434/images/twitter-logo-circle.png" title="Twitter" alt="Twitter" width="30" height="30" border="0"></a>
+                    
+                    &nbsp
+                  
+                        <a href="https://www.linkedin.com/company/1114814" style="text-decoration:none;color:#606060;"><img src="http://info.grabcad.com/rs/008-JLC-434/images/linkedin-logo-circle.png" title="LinkedIn" alt="LinkedIn" width="30" height="30" border="0"></a>
+                    &nbsp
+                    
+                    
+                        <a href="https://www.facebook.com/grabcad" style="text-decoration:none;color:#606060;"><img src="http://info.grabcad.com/rs/008-JLC-434/images/facebook-logo-circle.png" title="Facebook" alt="Facebook" width="30" height="30" border="0"></a>
+                   &nbsp
+                    
+                   
+                        <a href="http://blog.grabcad.com" style="text-decoration: none; color: #606060;" target="_blank"><img src="http://info.grabcad.com/rs/008-JLC-434/images/blog-icon-circle.png" title="Blog" alt="Blog" width="30" height="30" border="0"></a>
+                    &nbsp
+                    
+                    
+                        <a href="https://www.youtube.com/channel/UCKObKIn7qvIfd25MQOSbwjA" style="text-decoration:none; color:#C0C0C0;"><img src="http://info.grabcad.com/rs/008-JLC-434/images/youtube-logo-circle.png" title="YouTube" alt="YouTube" width="30" height="30" border="0"></a>
+                   
+                    
+                    &nbsp
+                        <a href="https://www.instagram.com/grabcadcommunity/" style="text-decoration:none; color:#C0C0C0;"><img src="http://info.grabcad.com/rs/008-JLC-434/images/instagram-logo-white.png" title="Instagram" alt="Instagram" width="30" height="30" border="0"></a>
+                   
+&nbsp
+
+                </div>
+                
+                <div>
+                    <p class="footer-text" style="color:#4d4d4d"><br>© 2022 GrabCAD. All rights reserved.</p>
+                </div>
+                
+            </div>
+            
+        </footer>
+		</center>
+   </body>
+</html>

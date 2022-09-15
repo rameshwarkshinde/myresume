@@ -1,0 +1,688 @@
+<!DOCTYPE html>
+<html lang="en">
+   <!-- Start :: Head Tag -->
+   <head>
+      <title> clinical communications essentials</title>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+      <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script> 
+      <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha2/js/bootstrap.bundle.min.js"></script>
+      <style>
+         @import url('https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap');
+         body {
+         background-color: #e8ecee;
+         font-family: 'Noto Sans', sans-serif;
+         }
+         table {
+         width: 100%;
+         }
+         .table-responsive {
+         display: contents;
+         }
+         .box {
+         box-shadow: 0 2.8px 2.2px rgba(0,0,0,0.034), 0 6.7px 5.3px rgba(0,0,0,0.048), 0 12.5px 10px rgba(0,0,0,0.06), 0 22.3px 17.9px rgba(0,0,0,0.072), 0 41.8px 33.4px rgba(0,0,0,0.086), 0 100px 80px rgba(0,0,0,0.12);
+         border-radius: 5px;
+         margin-bottom: 10px;
+         }
+         .border-style {
+         border-top: 10px solid #1F6FC1;
+         border-bottom: 10px solid #1F6FC1;
+         width: 750px;
+         }
+         .img {
+         padding-top: 10px;
+         width: 280px;
+         }
+         h3 {
+         padding-top: 10px;
+         font-size: 22px;
+         color: #2079b4;
+         font-weight: bold;
+         }
+         p {
+         font-size: 14px;
+         }
+         .btn-primary1 {
+         background-color: #1F6FC1;
+         width: 100%;
+         color: #fff;
+         font-size: 20px;
+         }
+         .btn-primary1:hover {
+         background-color: #1F6FC1;
+         color: #fff;
+         }
+         .calltoaction {
+         align-items: center;
+         background-color: #1F6FC1;
+         width: 254px;
+         color: #fff;
+         border-radius: 08px;
+         }
+         .table-responsive {
+         display: contents;
+         }
+         table.leadForm {
+         width: 100%;
+         border-collapse: collapse;
+         font-family: 'Noto Sans', sans-serif;
+         }
+         table.leadForm th, table.leadForm td {
+         color: #eb0003;
+         padding: 5px;
+         text-align: left;
+         font: normal 13px/21px 'Noto Sans', sans-serif;
+         }
+         table.leadForm select {
+         width: 150px!important;
+         height: 34px;
+         vertical-align: middle;
+         font: normal 13px/22px 'Noto Sans', sans-serif;
+         color: #111;
+         border: 1px solid #ccc;
+         }
+         table.leadForm option {
+         font: normal 13px/22px 'Noto Sans', sans-serif;
+         color: #111;
+         vertical-align: top;
+         margin-bottom: 10px;
+         }
+         table.leadForm input[type=text] {
+         width: 150px;
+         height: 30px;
+         border: 1px solid #ccc;
+         font: normal 12px/22px 'Noto Sans', sans-serif;
+         color: #111;
+         }
+         table.leadForm input[type=email] {
+         width: 150px;
+         height: 30px;
+         border: 1px solid #ccc;
+         font: normal 12px/22px 'Noto Sans', sans-serif;
+         color: #111;
+         }
+         table.leadForm input[type=tel] {
+         width: 150px;
+         height: 30px;
+         border: 1px solid #ccc;
+         font: normal 12px/22px 'Noto Sans', sans-serif;
+         color: #111;
+         }
+         td.subject: {
+         background-color:#282460;
+         }
+         .formbg {
+         -webkit-border-radius: 10px;
+         -moz-border-radius: 10px;
+         border-radius: 20px;
+         background-color:#;
+         padding: 10px;
+         text-align: right;
+         border: 2px thin #202020;
+         }
+      </style>
+      <script>
+         (function(){window.addEventListener("load",function(){var b=document.getElementsByClassName("needs-validation");var a=Array.prototype.filter.call(b,function(c){c.addEventListener("submit",function(d){if(c.checkValidity()===false){d.preventDefault();d.stopPropagation()}c.classList.add("was-validated")},false)})},false)})();
+         //custom real-time trigger	
+         !(function (e) {
+         "use strict";
+         e.fn.jbvalidator = function (t) {
+           t = e.extend({}, { language: "", errorMessage: !0, successClass: !1, html5BrowserDefault: !1, validFeedBackClass: "valid-feedbak", invalidFeedBackClass: "invalid-feedback", validClass: "is-valid", invalidClass: "is-invalid" }, t);
+           let a = {
+               HTML5: {
+                   typeMismatch: { email: "Enter a valid email address", },
+                   tooLong: "Please lengthen this text to %s characters or less (you are currently using %s characters).",
+                   tooShort: "Enter a valid phone number",
+                   badInput: { number: "Please enter a number." },
+               },
+           };
+           const i = "input,select";
+           let n = 0;
+           t.language &&
+               e.getJSON(t.language, function (e) {
+                   a = e;
+               }),
+               e(this).on("submit", function (t) {
+                   (n = 0),
+                       e(this)
+                           .find(i)
+                           .each((e, a) => {
+                               l(a, t);
+                           }),
+                       n && (t.preventDefault(), t.stopPropagation());
+               }),
+               e(this)
+                   .find(i)
+                   .each((t, a) => {
+                       e(a).on("input", function (t) {
+                           if ((l(this, t), c(a, "data-v-equal"))) {
+                               let t = e(a).attr("data-v-equal");
+                               e(t).on("input", function () {
+                                   let t = e(this).attr("id");
+                                   e('[data-v-equal="#' + t + '"]').trigger("input");
+                               });
+                           }
+                       });
+                   });
+           let l = function (e, a) {
+                   e.setCustomValidity(""),
+                       !1 !== e.checkValidity()
+                           ? Object.values(o).map((t) => {
+                                 let i = t.call(t, e, a);
+                                 i && e.setCustomValidity(i);
+                             })
+                           : t.html5BrowserDefault || e.setCustomValidity(u(e)),
+                       !1 === e.checkValidity() ? (r(e, e.validationMessage), n++) : s(e);
+               },
+               r = function (a, i) {
+                   if ((e(a).removeClass(t.validClass), e(a).addClass(t.invalidClass), (i = e(a).data("vMessage") ?? i), t.errorMessage)) {
+                       let n = e(a).parent();
+                       if (e(n).length) {
+                           let a = e(n).find("." + t.invalidFeedBackClass);
+                           e(a).length ? e(a).html(i) : e(n).append('<div class="' + t.invalidFeedBackClass + '">' + i + "</div>");
+                       }
+                   }
+               },
+               s = function (a) {
+                   e(a).removeClass(t.invalidClass), t.successClass && e(a).addClass(t.validClass);
+               },
+         
+               o = {
+                   customMin: function (t) {
+                       if (c(t, "data-v-min")) {
+                           let i = e(t).data("vMin"),
+                               n = e(t).val();
+                           if (isNaN(n) && (e(t).prop("require") || n.length > 0)) return a.number;
+                           if (n < i && (e(t).prop("require") || n.length > 0)) return a.minValue.sprintf(i);
+                       }
+                       return "";
+                   },
+                   customMax: function (t) {
+                       if (c(t, "data-v-max")) {
+                           let i = e(t).data("vMax"),
+                               n = e(t).val();
+                           if (isNaN(n) && (e(t).prop("require") || n.length > 0)) return a.number;
+                           if (n > i && (e(t).prop("require") || n.length > 0)) return a.maxValue.sprintf(i);
+                       }
+                       return "";
+                   },
+                   customMinLength: function (t) {
+                       if (c(t, "data-v-min-length")) {
+                           let i = e(t).data("vMinLength"),
+                               n = e(t).val().length;
+                           if (n < i && (e(t).prop("require") || n > 0)) return a.minLength.sprintf(i, n);
+                       }
+                       return "";
+                   },
+                   customMaxLength: function (t) {
+                       if (c(t, "data-v-max-length")) {
+                           let i = e(t).data("vMaxLength"),
+                               n = e(t).val().length;
+                           if (n > i && (e(t).prop("require") || n > 0)) return a.maxLength.sprintf(i, n);
+                       }
+                       return "";
+                   },
+               },
+               u = function (t) {
+                   if (t.validity.valueMissing) {
+                       if ("INPUT" === t.tagName) return void 0 === a.HTML5.valueMissing.INPUT[t.type] ? a.HTML5.valueMissing.INPUT.default : a.HTML5.valueMissing.INPUT[t.type];
+                       if (void 0 !== a.HTML5.valueMissing[t.tagName]) return a.HTML5.valueMissing[t.tagName];
+                   } else if (t.validity.typeMismatch) {
+                       if (void 0 !== a.HTML5.typeMismatch[t.type]) return a.HTML5.typeMismatch[t.type];
+                   } 
+         else {
+                       if (t.validity.tooLong) {
+                           let i = t.getAttribute("maxlength") ?? null,
+                               n = e(t).val();
+                           return a.HTML5.tooLong.sprintf(i, n.length);
+                       }
+                       if (t.validity.tooShort) {
+                           let i = t.getAttribute("minlength") ?? null,
+                               n = e(t).val();
+                           return a.HTML5.tooShort.sprintf(i, n.length);
+                       }
+                       if (t.validity.patternMismatch) {
+                           if (c(t, "pattern") && c(t, "title")) return e(t).attr("title");
+                           let i = t.getAttribute("pattern") ?? null;
+                           return a.HTML5.patternMismatch.sprintf(i);
+                       }
+                       if (t.validity.badInput && void 0 !== a.HTML5.badInput[t.type]) return a.HTML5.badInput[t.type];
+                   }
+                   return t.validationMessage ?? "";
+               };
+           function c(t, a, i = "") {
+               let n = e(t).attr(a);
+               if (void 0 !== n && !1 !== n) {
+                   if (!i) return !0;
+                   if (i === n) return !0;
+               }
+               return !1;
+           }
+           return (
+               (String.prototype.sprintf = function () {
+                   for (var e = this.toString(), t = 0; t < arguments.length; t++) {
+                       var a = parseFloat(arguments[t]);
+                       if (a || 0 == a) {
+                           var i = a > 1 || 0 == a ? "s" : "";
+                           e = e.replace(/%s {1}(\w+)\(s\){1}/, "%s $1" + i);
+                       }
+                       e = e.replace("%s", arguments[t]);
+                   }
+                   return e;
+               }),
+               {
+                   validator: o,
+                   errorTrigger: function (e, t) {
+                       "object" == typeof e && (e = e[0]), e.setCustomValidity(t), r(e, e.validationMessage);
+                   },
+               }
+           );
+         };
+         })(jQuery);
+         
+         $(function (){
+         
+           let validator = $('form.needs-validation').jbvalidator({
+               errorMessage: true,
+               successClass: true,
+           });
+         
+         
+           let validatorServerSide = $('form.validatorServerSide').jbvalidator({
+               errorMessage: true,
+               successClass: false,
+           });
+         
+           //serverside
+           $(document).on('submit', '.validatorServerSide', function(){
+         
+               $.ajax({
+                   method:"get",
+                   url:"test.json",
+                   data: $(this).serialize(),
+                   success: function (data){
+                       if(data.status === 'error') {
+                           validatorServerSide.errorTrigger($('[name=username]'), data.message);
+                       }
+                   }
+               })
+         
+               return false;
+           });
+         })
+      </script>
+   </head>
+   <!-- End :: Head Tag -->
+   <!-- Start :: Content -->
+   <body>
+      <div class="container box border-style" style="background-color:#fff;margin-top:3%;">
+         <!-- Start :: Brand Logo & Sponsorer Logo -->
+         <table width="100%" cellspacing="0" cellpadding="5" style="border-bottom:1px solid #c0c0c0;">
+            <tr>
+               <td align="left"><img src="https://resources.b2bneed.com/ebook/b2bneed-logo.png" alt="b2bneed" width="100" style="padding-top:0px; padding-bottom:0px;" align="left"></td>
+               <td align="right"><img src="https://resources.b2bneed.com/ebook/jamf-logo.png" alt="" width="200" ></td>
+            </tr>
+         </table>
+         <!-- End :: Brand Logo & Sponsorer Logo --> 
+         <!-- Start :: Title, Content, Form & Image -->
+         <table cellspacing="0" cellpadding="10" border="0">
+            <tbody>
+               <tr>
+                  <!-- Start :: Asset Image -->
+                  <td width="54%" height="20" align="left" valign="top" style="padding-top:20px;"><img src="https://resources.b2bneed.com/ebook/DC49142-Jamf-WH-EN-1.PNG" id="cover_image" width="300" style="border:1px solid #000;" alt=""></td>
+                  <!-- End :: Asset Image --> 
+                  <!-- Start :: Form -->
+                  <td rowspan="2" width="46%" valign="top" align="left" style="padding-top:20px; padding-bottom: 20px;">
+                     <div class="formbg" style="box-shadow:0 0 01px 01px #1F6FC1;">
+                        <form class="form-group needs-validation" novalidate action="DC49142-Jamf-WH-EN-1-Sendmail.php" method="post">
+                           <table class="leadForm" width="100%" colspan="2">
+                              <div>
+                                 <tr>
+                                    <th> <span>First Name*</span> </th>
+                                    <td width="50%"><input type="text" class="form-control form-control-sm" id="validationDefault01" aria-label="Search" aria-labelledby="firstname" name="firstname"
+                                       required></td>
+                                 </tr>
+                                 <tr>
+                                    <th> <span>Last Name*</span> </th>
+                                    <td><input type="text" class="form-control form-control-sm" id="validationDefault02" aria-label="Search" aria-labelledby="lastname" required name="data[0]"
+                                       ></td>
+                                 </tr>
+                                 <tr>
+                                    <th> <span for="Email" class="col-form-label form-color">Work Email*</span> </th>
+                                    <td><input type="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$"  class="form-control form-control-sm" id="validationDefault03" name="data[1]"
+                                       required>
+                                       <span style="position:relative" class="invalid-feedback"> Enter a valid email address </span>
+                                    </td>
+                                 </tr>
+                                 <tr>
+                                    <th> <span>Phone</span> </th>
+                                    <td>
+                                       <input type="tel" minlength="5" maxlength="15" pattern="[0-9]*" class="form-control-sm" id="" aria-label="Search" aria-labelledby="Phone" name="data[2]"
+                                          >
+                                       <!-- <span style="position:relative;" class="invalid-feedback"> Enter a valid phone number </span></td> -->
+                                 </tr>
+                                 <tr>
+                                    <th> <span>Company Name*</span> </th>
+                                    <td><input type="text" name="data[3]"
+                                       class="form-control form-control-sm" id="validationDefault05" aria-label="Search" aria-labelledby="Company"  required></td>
+                                 </tr>
+                                 <tr>
+                                    <th> <span>Country*</span> </th>
+                                    <td>
+                                       <select id="Country" name="data[4]"
+                                          class="form-control form-control-sm custom-select" aria-label="Search" aria-labelledby="Country" required>
+                                          <option value="">Choose One</option>
+                                          <option value="AF">AFGHANISTAN</option>
+                                          <option value="AX">ALAND ISLANDS</option>
+                                          <option value="AL">ALBANIA</option>
+                                          <option value="DZ">ALGERIA</option>
+                                          <option value="AS">AMERICAN SAMOA</option>
+                                          <option value="AD">ANDORRA</option>
+                                          <option value="AO">ANGOLA</option>
+                                          <option value="AI">ANGUILLA</option>
+                                          <option value="AQ">ANTARCTICA</option>
+                                          <option value="AG">ANTIGUA AND BARBUDA</option>
+                                          <option value="AR">ARGENTINA</option>
+                                          <option value="AM">ARMENIA</option>
+                                          <option value="AW">ARUBA</option>
+                                          <option value="AU">AUSTRALIA</option>
+                                          <option value="AT">AUSTRIA</option>
+                                          <option value="AZ">AZERBAIJAN</option>
+                                          <option value="BS">BAHAMAS</option>
+                                          <option value="BH">BAHRAIN</option>
+                                          <option value="BD">BANGLADESH</option>
+                                          <option value="BB">BARBADOS</option>
+                                          <option value="BY">BELARUS</option>
+                                          <option value="BE">BELGIUM</option>
+                                          <option value="BZ">BELIZE</option>
+                                          <option value="BJ">BENIN</option>
+                                          <option value="BM">BERMUDA</option>
+                                          <option value="BT">BHUTAN</option>
+                                          <option value="BO">BOLIVIA</option>
+                                          <option value="BQ">BONAIRE, SINT EUSTATIUS AND SABA</option>
+                                          <option value="BA">BOSNIA AND HERZEGOVINA</option>
+                                          <option value="BW">BOTSWANA</option>
+                                          <option value="BV">BOUVET ISLAND</option>
+                                          <option value="BR">BRAZIL</option>
+                                          <option value="IO">BRITISH INDIAN OCEAN TERRITORY</option>
+                                          <option value="BN">BRUNEI DARUSSALAM</option>
+                                          <option value="BG">BULGARIA</option>
+                                          <option value="BF">BURKINA FASO</option>
+                                          <option value="BI">BURUNDI</option>
+                                          <option value="KH">CAMBODIA</option>
+                                          <option value="CM">CAMEROON</option>
+                                          <option value="CA">CANADA</option>
+                                          <option value="CV">CAPE VERDE</option>
+                                          <option value="KY">CAYMAN ISLANDS</option>
+                                          <option value="CF">CENTRAL AFRICAN REPUBLIC</option>
+                                          <option value="TD">CHAD</option>
+                                          <option value="CL">CHILE</option>
+                                          <option value="CN">CHINA</option>
+                                          <option value="CX">CHRISTMAS ISLAND</option>
+                                          <option value="CC">COCOS (KEELING) ISLANDS</option>
+                                          <option value="CO">COLOMBIA</option>
+                                          <option value="KM">COMOROS</option>
+                                          <option value="CG">CONGO</option>
+                                          <option value="CK">COOK ISLANDS</option>
+                                          <option value="CR">COSTA RICA</option>
+                                          <option value="CI">COTE D'IVOIRE</option>
+                                          <option value="HR">CROATIA</option>
+                                          <option value="CU">CUBA</option>
+                                          <option value="CW">CURACAO</option>
+                                          <option value="CY">CYPRUS</option>
+                                          <option value="CZ">CZECH REPUBLIC</option>
+                                          <option value="CD">DEMOCRATIC REPUBLIC OF THE CONGO</option>
+                                          <option value="DK">DENMARK</option>
+                                          <option value="DJ">DJIBOUTI</option>
+                                          <option value="DM">DOMINICA</option>
+                                          <option value="DO">DOMINICAN REPUBLIC</option>
+                                          <option value="EC">ECUADOR</option>
+                                          <option value="EG">EGYPT</option>
+                                          <option value="SV">EL SALVADOR</option>
+                                          <option value="GQ">EQUATORIAL GUINEA</option>
+                                          <option value="ER">ERITREA</option>
+                                          <option value="EE">ESTONIA</option>
+                                          <option value="ET">ETHIOPIA</option>
+                                          <option value="FK">FALKLAND ISLANDS (MALVINAS)</option>
+                                          <option value="FO">FAROE ISLANDS</option>
+                                          <option value="FJ">FIJI</option>
+                                          <option value="FI">FINLAND</option>
+                                          <option value="FR">FRANCE</option>
+                                          <option value="GF">FRENCH GUIANA</option>
+                                          <option value="PF">FRENCH POLYNESIA</option>
+                                          <option value="TF">FRENCH SOUTHERN TERRITORIES</option>
+                                          <option value="GA">GABON</option>
+                                          <option value="GM">GAMBIA</option>
+                                          <option value="GE">GEORGIA</option>
+                                          <option value="DE">GERMANY</option>
+                                          <option value="GH">GHANA</option>
+                                          <option value="GI">GIBRALTAR</option>
+                                          <option value="MG">GLORIOSO ISLANDS</option>
+                                          <option value="GB">GREAT BRITAIN</option>
+                                          <option value="GR">GREECE</option>
+                                          <option value="GL">GREENLAND</option>
+                                          <option value="GD">GRENADA</option>
+                                          <option value="GP">GUADELOUPE</option>
+                                          <option value="GU">GUAM</option>
+                                          <option value="GT">GUATEMALA</option>
+                                          <option value="GG">GUERNSEY</option>
+                                          <option value="GN">GUINEA</option>
+                                          <option value="GW">GUINEA-BISSAU</option>
+                                          <option value="GY">GUYANA</option>
+                                          <option value="HT">HAITI</option>
+                                          <option value="HM">HEARD ISLAND AND MCDONALD ISLANDS</option>
+                                          <option value="VA">HOLY SEE (VATICAN CITY STATE)</option>
+                                          <option value="HN">HONDURAS</option>
+                                          <option value="HK">HONG KONG</option>
+                                          <option value="HU">HUNGARY</option>
+                                          <option value="IS">ICELAND</option>
+                                          <option value="IN">INDIA</option>
+                                          <option value="ID">INDONESIA</option>
+                                          <option value="IR">IRAN, ISLAMIC REPUBLIC OF</option>
+                                          <option value="IQ">IRAQ</option>
+                                          <option value="IE">IRELAND</option>
+                                          <option value="IM">ISLE OF MAN</option>
+                                          <option value="IL">ISRAEL</option>
+                                          <option value="IT">ITALY</option>
+                                          <option value="JM">JAMAICA</option>
+                                          <option value="JP">JAPAN</option>
+                                          <option value="JE">JERSEY</option>
+                                          <option value="JO">JORDAN</option>
+                                          <option value="KZ">KAZAKHSTAN</option>
+                                          <option value="KE">KENYA</option>
+                                          <option value="KI">KIRIBATI</option>
+                                          <option value="KR">KOREA</option>
+                                          <option value="KR">KOREA, SOUTH</option>
+                                          <option value="KP">KOREA, DEMOCRATIC PEOPLE'S REPUBLIC OF</option>
+                                          <option value="KW">KUWAIT</option>
+                                          <option value="KG">KYRGYZSTAN</option>
+                                          <option value="LA">LAO PEOPLE'S DEMOCRATIC REPUBLIC</option>
+                                          <option value="LV">LATVIA</option>
+                                          <option value="LB">LEBANON</option>
+                                          <option value="LS">LESOTHO</option>
+                                          <option value="LR">LIBERIA</option>
+                                          <option value="LY">LIBYAN ARAB JAMAHIRIYA</option>
+                                          <option value="LI">LIECHTENSTEIN</option>
+                                          <option value="LT">LITHUANIA</option>
+                                          <option value="LU">LUXEMBOURG</option>
+                                          <option value="MO">MACAO</option>
+                                          <option value="MK">MACEDONIA, THE FORMER YUGOSLAV REPUBLIC OF</option>
+                                          <option value="MK">MACEDONIA</option>
+                                          <option value="MG">MADAGASCAR</option>
+                                          <option value="MW">MALAWI</option>
+                                          <option value="MY">MALAYSIA</option>
+                                          <option value="MV">MALDIVES</option>
+                                          <option value="ML">MALI</option>
+                                          <option value="MT">MALTA</option>
+                                          <option value="MH">MARSHALL ISLANDS</option>
+                                          <option value="MQ">MARTINIQUE</option>
+                                          <option value="MR">MAURITANIA</option>
+                                          <option value="MU">MAURITIUS</option>
+                                          <option value="YT">MAYOTTE</option>
+                                          <option value="MX">MEXICO</option>
+                                          <option value="FM">MICRONESIA, FEDERATED STATES OF</option>
+                                          <option value="MD">MOLDOVA, REPUBLIC OF</option>
+                                          <option value="MC">MONACO</option>
+                                          <option value="MN">MONGOLIA</option>
+                                          <option value="ME">MONTENEGRO</option>
+                                          <option value="MS">MONTSERRAT</option>
+                                          <option value="MA">MOROCCO</option>
+                                          <option value="MZ">MOZAMBIQUE</option>
+                                          <option value="MM">MYANMAR</option>
+                                          <option value="NA">NAMIBIA</option>
+                                          <option value="NR">NAURU</option>
+                                          <option value="NP">NEPAL</option>
+                                          <option value="NL">NETHERLANDS</option>
+                                          <option value="AN">Netherlands Antilles</option>
+                                          <option value="NC">NEW CALEDONIA</option>
+                                          <option value="NZ">NEW ZEALAND</option>
+                                          <option value="NI">NICARAGUA</option>
+                                          <option value="NE">NIGER</option>
+                                          <option value="NG">NIGERIA</option>
+                                          <option value="NU">NIUE</option>
+                                          <option value="NF">NORFOLK ISLAND</option>
+                                          <option value="MP">NORTHERN MARIANA ISLANDS</option>
+                                          <option value="NO">NORWAY</option>
+                                          <option value="OM">OMAN</option>
+                                          <option value="PK">PAKISTAN</option>
+                                          <option value="PW">PALAU</option>
+                                          <option value="PS">PALESTINIAN TERRITORY, OCCUPIED</option>
+                                          <option value="PA">PANAMA</option>
+                                          <option value="PG">PAPUA NEW GUINEA</option>
+                                          <option value="PY">PARAGUAY</option>
+                                          <option value="PE">PERU</option>
+                                          <option value="PH">PHILIPPINES</option>
+                                          <option value="PN">PITCAIRN</option>
+                                          <option value="PL">POLAND</option>
+                                          <option value="PT">PORTUGAL</option>
+                                          <option value="PR">PUERTO RICO</option>
+                                          <option value="QA">QATAR</option>
+                                          <option value="RE">REUNION</option>
+                                          <option value="RO">ROMANIA</option>
+                                          <option value="RU">RUSSIA</option>
+                                          <option value="RW">RWANDA</option>
+                                          <option value="BL">SAINT BARTHELEMY</option>
+                                          <option value="SH">SAINT HELENA, ASCENSION AND TRISTAN DA CUNHA</option>
+                                          <option value="KN">SAINT KITTS AND NEVIS</option>
+                                          <option value="LC">SAINT LUCIA</option>
+                                          <option value="MF">SAINT MARTIN (FRENCH PART)</option>
+                                          <option value="PM">SAINT PIERRE AND MIQUELON</option>
+                                          <option value="VC">SAINT VINCENT AND THE GRENADINES</option>
+                                          <option value="WS">SAMOA</option>
+                                          <option value="SM">SAN MARINO</option>
+                                          <option value="ST">SAO TOME AND PRINCIPE</option>
+                                          <option value="SA">SAUDI ARABIA</option>
+                                          <option value="SN">SENEGAL</option>
+                                          <option value="RS">SERBIA</option>
+                                          <option value="SC">SEYCHELLES</option>
+                                          <option value="SL">SIERRA LEONE</option>
+                                          <option value="SG">SINGAPORE</option>
+                                          <option value="SX">SINT MAARTEN (DUTCH PART)</option>
+                                          <option value="SK">SLOVAKIA</option>
+                                          <option value="SI">SLOVENIA</option>
+                                          <option value="SB">SOLOMON ISLANDS</option>
+                                          <option value="SO">SOMALIA</option>
+                                          <option value="ZA">SOUTH AFRICA</option>
+                                          <option value="GS">SOUTH GEORGIA AND THE SOUTH SANDWICH ISLANDS</option>
+                                          <option value="ES">SPAIN</option>
+                                          <option value="LK">SRI LANKA</option>
+                                          <option value="SD">SUDAN</option>
+                                          <option value="SR">SURINAME</option>
+                                          <option value="SJ">SVALBARD AND JAN MAYEN</option>
+                                          <option value="SZ">SWAZILAND</option>
+                                          <option value="SE">SWEDEN</option>
+                                          <option value="CH">SWITZERLAND</option>
+                                          <option value="SY">SYRIAN ARAB REPUBLIC</option>
+                                          <option value="TW">TAIWAN</option>
+                                          <option value="TJ">TAJIKISTAN</option>
+                                          <option value="TZ">TANZANIA</option>
+                                          <option value="TH">THAILAND</option>
+                                          <option value="TL">TIMOR-LESTE</option>
+                                          <option value="TG">TOGO</option>
+                                          <option value="TK">TOKELAU</option>
+                                          <option value="TO">TONGA</option>
+                                          <option value="TT">TRINIDAD AND TOBAGO</option>
+                                          <option value="TN">TUNISIA</option>
+                                          <option value="TR">TURKEY</option>
+                                          <option value="TM">TURKMENISTAN</option>
+                                          <option value="TC">TURKS AND CAICOS ISLANDS</option>
+                                          <option value="TV">TUVALU</option>
+                                          <option value="UG">UGANDA</option>
+                                          <option value="UA">UKRAINE</option>
+                                          <option value="AE">UNITED ARAB EMIRATES</option>
+                                          <option value="UK">UNITED KINGDOM</option>
+                                          <option value="US">UNITED STATES</option>
+                                          <option value="UM">UNITED STATES MINOR OUTLYING ISLANDS</option>
+                                          <option value="UY">URUGUAY</option>
+                                          <option value="UZ">UZBEKISTAN</option>
+                                          <option value="VU">VANUATU</option>
+                                          <option value="VE">VENEZUELA</option>
+                                          <option value="VN">VIET NAM</option>
+                                          <option value="VN">VIETNAM</option>
+                                          <option value="VG">VIRGIN ISLANDS, BRITISH</option>
+                                          <option value="VI">VIRGIN ISLANDS, U.S.</option>
+                                          <option value="WF">WALLIS AND FUTUNA</option>
+                                          <option value="EH">WESTERN SAHARA</option>
+                                          <option value="YE">YEMEN</option>
+                                          <option value="ZM">ZAMBIA</option>
+                                          <option value="ZW">ZIMBABWE</option>
+                                       </select>
+                                    </td>
+                                 </tr>
+                              </div>
+                           </table>
+                           <div id="ukgdpr" style="color:#333;padding:5px;margin-top:10px;text-align:left;letter-spacing:-0.1px;font-size:10.5px;">
+                              <div class="form-check custom-control custom-checkbox">
+                                 <input class="form-check-input custom-control-input" type="checkbox" value="Yes1" name="data[8]"
+                                    id="invalidCheck1" required>
+                                 <label class="form-check-label custom-control-label" for="invalidCheck1" style="padding-top:03px;"> 
+                                  I would like to receive information from sponsoring this content and willing to share the information above with Jamf.
+</label>
+                              </div>
+                              <div class="form-check custom-control custom-checkbox">
+                                 <input class="form-check-input custom-control-input" type="checkbox" value="Yes2" name="data[9]"
+                                    id="invalidCheck" required>
+                                 <label class="form-check-label custom-control-label" for="invalidCheck" style="padding-top:03px;">I want to receive news, feature updates, discounts, and offers from b2bneed. </label>
+                              </div>
+                           </div>
+                           <br/>
+                           <div align="center" style="margin-left:10px;">
+                              <button type="submit" value="" aria-label="download" class="btn btn-primary1 calltoaction" style="padding-bottom: 3%;"> Submit</button>
+                           </div>
+                        </form>
+                     </div>
+                  </td>
+                  <!-- End :: Form --> 
+               </tr>
+               <!-- start :: Title, Content -->
+               <tr>
+                  <td valign="top" align="left">
+                     <h1 style="color:#1F6FC1;font:bold 18px/25px 'Noto Sans',sans-serif;margin-bottom:0"> clinical communications essentials </h1>
+                     <br>
+                     <p>Multiple studies have shown that the outcomes of poor clinical communication might be one of the most prevalent problems in medicine. Errors in communication can create substantial clinical morbidity and mortality. Communication errors were found to be the leading cause in a retrospective review of 16,000 in-hospital deaths. This was twice as frequent as errors due to inadequate clinical skill. And it’s not just in hospitals.
+                     </p>
+                  </td>
+               </tr>
+               <!-- End :: Title, Content -->
+            </tbody>
+         </table>
+         <!-- End :: Title, Content, Form & Image --> 
+         <!-- Start :: Copyright -->
+         <table style="border-top:1px solid #c0c0c0">
+            <tbody class="table table-borderless table-responsive">
+               <td>
+                  <div style="padding-top:0;font-size:10.5px;text-align:center;">
+                     This is a marketing email sent from b2bneed.com<br>62 E 42nd St, New York, NY 10165, United States. <br>
+                     <a href="https://www.b2bneed.com/privacy-policy/" style="box-sizing: border-box;color:#000; text-decoration: underline;" target="_blank">Privacy Policy</a>&nbsp;|&nbsp;<a href="https://www.b2bneed.com/unsubscribe/" style="box-sizing: border-box;font-size: 11.0px;text-align: center;background-color:#fff;color:#000; text-decoration: underline; " target="_blank">Unsubscribe</a><br>
+                     &#169; 2022 B2BNeed.com All Rights Reserved. 
+                  </div>
+               </td>
+            </tbody>
+         </table>
+         <!-- End :: Copyright --> 
+      </div>
+   </body>
+   <!-- End :: Content -->
+</html>

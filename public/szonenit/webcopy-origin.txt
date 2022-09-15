@@ -1,0 +1,232 @@
+Uri: https://demo.ayroui.com/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js
+File Name: C:\xampp\htdocs\demo.ayroui.com\cdn-cgi\scripts\5c5dd728\cloudflare-static\email-decode.min.js
+Content Type: application/javascript
+
+Uri: https://demo.ayroui.com/cdn-cgi/scripts/7d0fa10a/cloudflare-static/rocket-loader.min.js
+File Name: C:\xampp\htdocs\demo.ayroui.com\cdn-cgi\scripts\7d0fa10a\cloudflare-static\rocket-loader.min.js
+Content Type: application/javascript
+
+Uri: https://demo.ayroui.com/templates/business-template/
+File Name: C:\xampp\htdocs\demo.ayroui.com\templates\business-template\index.htm
+Content Type: text/html
+
+Uri: https://demo.ayroui.com/templates/business-template/assets/css/bootstrap.min.css
+File Name: C:\xampp\htdocs\demo.ayroui.com\templates\business-template\assets\css\bootstrap.min.css
+Content Type: text/css
+
+Uri: https://demo.ayroui.com/templates/business-template/assets/css/glightbox.min.css
+File Name: C:\xampp\htdocs\demo.ayroui.com\templates\business-template\assets\css\glightbox.min.css
+Content Type: text/css
+
+Uri: https://demo.ayroui.com/templates/business-template/assets/css/lineicons.css
+File Name: C:\xampp\htdocs\demo.ayroui.com\templates\business-template\assets\css\lineicons.css
+Content Type: text/css
+
+Uri: https://demo.ayroui.com/templates/business-template/assets/css/tiny-slider.css
+File Name: C:\xampp\htdocs\demo.ayroui.com\templates\business-template\assets\css\tiny-slider.css
+Content Type: text/css
+
+Uri: https://demo.ayroui.com/templates/business-template/assets/fonts/LineIcons.eot
+File Name: C:\xampp\htdocs\demo.ayroui.com\templates\business-template\assets\fonts\LineIcons.eot
+Content Type: application/vnd.ms-fontobject
+
+Uri: https://demo.ayroui.com/templates/business-template/assets/fonts/LineIcons.svg
+File Name: C:\xampp\htdocs\demo.ayroui.com\templates\business-template\assets\fonts\LineIcons.svg
+Content Type: image/svg+xml
+
+Uri: https://demo.ayroui.com/templates/business-template/assets/fonts/LineIcons.ttf
+File Name: C:\xampp\htdocs\demo.ayroui.com\templates\business-template\assets\fonts\LineIcons.ttf
+Content Type: application/font-sfnt
+
+Uri: https://demo.ayroui.com/templates/business-template/assets/fonts/LineIcons.woff
+File Name: C:\xampp\htdocs\demo.ayroui.com\templates\business-template\assets\fonts\LineIcons.woff
+Content Type: application/font-woff
+
+Uri: https://demo.ayroui.com/templates/business-template/assets/fonts/LineIcons.woff2
+File Name: C:\xampp\htdocs\demo.ayroui.com\templates\business-template\assets\fonts\LineIcons.woff2
+Content Type: font/woff2
+
+Uri: https://demo.ayroui.com/templates/business-template/assets/images/about/about-img1.jpg
+File Name: C:\xampp\htdocs\demo.ayroui.com\templates\business-template\assets\images\about\about-img1.jpg
+Content Type: image/jpeg
+
+Uri: https://demo.ayroui.com/templates/business-template/assets/images/ayroui.svg
+File Name: C:\xampp\htdocs\demo.ayroui.com\templates\business-template\assets\images\ayroui.svg
+Content Type: image/svg+xml
+
+Uri: https://demo.ayroui.com/templates/business-template/assets/images/blog/1.jpg
+File Name: C:\xampp\htdocs\demo.ayroui.com\templates\business-template\assets\images\blog\1.jpg
+Content Type: image/jpeg
+
+Uri: https://demo.ayroui.com/templates/business-template/assets/images/blog/2.jpg
+File Name: C:\xampp\htdocs\demo.ayroui.com\templates\business-template\assets\images\blog\2.jpg
+Content Type: image/jpeg
+
+Uri: https://demo.ayroui.com/templates/business-template/assets/images/blog/3.jpg
+File Name: C:\xampp\htdocs\demo.ayroui.com\templates\business-template\assets\images\blog\3.jpg
+Content Type: image/jpeg
+
+Uri: https://demo.ayroui.com/templates/business-template/assets/images/blog/b6.jpg
+File Name: C:\xampp\htdocs\demo.ayroui.com\templates\business-template\assets\images\blog\b6.jpg
+Content Type: image/jpeg
+
+Uri: https://demo.ayroui.com/templates/business-template/assets/images/call-action/overlay.png
+File Name: C:\xampp\htdocs\demo.ayroui.com\templates\business-template\assets\images\call-action\overlay.png
+Content Type: image/png
+
+Uri: https://demo.ayroui.com/templates/business-template/assets/images/client-logo/ayroui.svg
+File Name: C:\xampp\htdocs\demo.ayroui.com\templates\business-template\assets\images\client-logo\ayroui.svg
+Content Type: image/svg+xml
+
+Uri: https://demo.ayroui.com/templates/business-template/assets/images/client-logo/ecomhtml.svg
+File Name: C:\xampp\htdocs\demo.ayroui.com\templates\business-template\assets\images\client-logo\ecomhtml.svg
+Content Type: image/svg+xml
+
+Uri: https://demo.ayroui.com/templates/business-template/assets/images/client-logo/graygrids.svg
+File Name: C:\xampp\htdocs\demo.ayroui.com\templates\business-template\assets\images\client-logo\graygrids.svg
+Content Type: image/svg+xml
+
+Uri: https://demo.ayroui.com/templates/business-template/assets/images/client-logo/lineicons.svg
+File Name: C:\xampp\htdocs\demo.ayroui.com\templates\business-template\assets\images\client-logo\lineicons.svg
+Content Type: image/svg+xml
+
+Uri: https://demo.ayroui.com/templates/business-template/assets/images/client-logo/tailwindtemplates.svg
+File Name: C:\xampp\htdocs\demo.ayroui.com\templates\business-template\assets\images\client-logo\tailwindtemplates.svg
+Content Type: image/svg+xml
+
+Uri: https://demo.ayroui.com/templates/business-template/assets/images/client-logo/uideck.svg
+File Name: C:\xampp\htdocs\demo.ayroui.com\templates\business-template\assets\images\client-logo\uideck.svg
+Content Type: image/svg+xml
+
+Uri: https://demo.ayroui.com/templates/business-template/assets/images/favicon.svg
+File Name: C:\xampp\htdocs\demo.ayroui.com\templates\business-template\assets\images\favicon.svg
+Content Type: image/svg+xml
+
+Uri: https://demo.ayroui.com/templates/business-template/assets/images/header/hero-image.jpg
+File Name: C:\xampp\htdocs\demo.ayroui.com\templates\business-template\assets\images\header\hero-image.jpg
+Content Type: image/jpeg
+
+Uri: https://demo.ayroui.com/templates/business-template/assets/images/logo.svg
+File Name: C:\xampp\htdocs\demo.ayroui.com\templates\business-template\assets\images\logo.svg
+Content Type: image/svg+xml
+
+Uri: https://demo.ayroui.com/templates/business-template/assets/images/portfolio/pf1.jpg
+File Name: C:\xampp\htdocs\demo.ayroui.com\templates\business-template\assets\images\portfolio\pf1.jpg
+Content Type: image/jpeg
+
+Uri: https://demo.ayroui.com/templates/business-template/assets/images/portfolio/pf2.jpg
+File Name: C:\xampp\htdocs\demo.ayroui.com\templates\business-template\assets\images\portfolio\pf2.jpg
+Content Type: image/jpeg
+
+Uri: https://demo.ayroui.com/templates/business-template/assets/images/portfolio/pf3.jpg
+File Name: C:\xampp\htdocs\demo.ayroui.com\templates\business-template\assets\images\portfolio\pf3.jpg
+Content Type: image/jpeg
+
+Uri: https://demo.ayroui.com/templates/business-template/assets/images/portfolio/pf4.jpg
+File Name: C:\xampp\htdocs\demo.ayroui.com\templates\business-template\assets\images\portfolio\pf4.jpg
+Content Type: image/jpeg
+
+Uri: https://demo.ayroui.com/templates/business-template/assets/images/portfolio/pf5.jpg
+File Name: C:\xampp\htdocs\demo.ayroui.com\templates\business-template\assets\images\portfolio\pf5.jpg
+Content Type: image/jpeg
+
+Uri: https://demo.ayroui.com/templates/business-template/assets/images/portfolio/pf6.jpg
+File Name: C:\xampp\htdocs\demo.ayroui.com\templates\business-template\assets\images\portfolio\pf6.jpg
+Content Type: image/jpeg
+
+Uri: https://demo.ayroui.com/templates/business-template/assets/images/team/team-1.jpg
+File Name: C:\xampp\htdocs\demo.ayroui.com\templates\business-template\assets\images\team\team-1.jpg
+Content Type: image/jpeg
+
+Uri: https://demo.ayroui.com/templates/business-template/assets/images/team/team-2.jpg
+File Name: C:\xampp\htdocs\demo.ayroui.com\templates\business-template\assets\images\team\team-2.jpg
+Content Type: image/jpeg
+
+Uri: https://demo.ayroui.com/templates/business-template/assets/images/team/team-3.jpg
+File Name: C:\xampp\htdocs\demo.ayroui.com\templates\business-template\assets\images\team\team-3.jpg
+Content Type: image/jpeg
+
+Uri: https://demo.ayroui.com/templates/business-template/assets/images/testimonial/author-1.jpg
+File Name: C:\xampp\htdocs\demo.ayroui.com\templates\business-template\assets\images\testimonial\author-1.jpg
+Content Type: image/jpeg
+
+Uri: https://demo.ayroui.com/templates/business-template/assets/images/testimonial/author-2.jpg
+File Name: C:\xampp\htdocs\demo.ayroui.com\templates\business-template\assets\images\testimonial\author-2.jpg
+Content Type: image/jpeg
+
+Uri: https://demo.ayroui.com/templates/business-template/assets/images/testimonial/author-3.jpg
+File Name: C:\xampp\htdocs\demo.ayroui.com\templates\business-template\assets\images\testimonial\author-3.jpg
+Content Type: image/jpeg
+
+Uri: https://demo.ayroui.com/templates/business-template/assets/images/testimonial/author-4.jpg
+File Name: C:\xampp\htdocs\demo.ayroui.com\templates\business-template\assets\images\testimonial\author-4.jpg
+Content Type: image/jpeg
+
+Uri: https://demo.ayroui.com/templates/business-template/assets/images/testimonial/author-5.jpg
+File Name: C:\xampp\htdocs\demo.ayroui.com\templates\business-template\assets\images\testimonial\author-5.jpg
+Content Type: image/jpeg
+
+Uri: https://demo.ayroui.com/templates/business-template/assets/images/video/video-bg.png
+File Name: C:\xampp\htdocs\demo.ayroui.com\templates\business-template\assets\images\video\video-bg.png
+Content Type: image/png
+
+Uri: https://demo.ayroui.com/templates/business-template/assets/images/white-logo.svg
+File Name: C:\xampp\htdocs\demo.ayroui.com\templates\business-template\assets\images\white-logo.svg
+Content Type: image/svg+xml
+
+Uri: https://demo.ayroui.com/templates/business-template/assets/js/bootstrap.bundle.min.js
+File Name: C:\xampp\htdocs\demo.ayroui.com\templates\business-template\assets\js\bootstrap.bundle.min.js
+Content Type: application/javascript
+
+Uri: https://demo.ayroui.com/templates/business-template/assets/js/glightbox.min.js
+File Name: C:\xampp\htdocs\demo.ayroui.com\templates\business-template\assets\js\glightbox.min.js
+Content Type: application/javascript
+
+Uri: https://demo.ayroui.com/templates/business-template/assets/js/main.js
+File Name: C:\xampp\htdocs\demo.ayroui.com\templates\business-template\assets\js\main.js
+Content Type: application/javascript
+
+Uri: https://demo.ayroui.com/templates/business-template/assets/js/tiny-slider.js
+File Name: C:\xampp\htdocs\demo.ayroui.com\templates\business-template\assets\js\tiny-slider.js
+Content Type: application/javascript
+
+Uri: https://demo.ayroui.com/templates/business-template/style.css
+File Name: C:\xampp\htdocs\demo.ayroui.com\templates\business-template\style.css
+Content Type: text/css
+
+Uri: https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500;600;700;800;900&display=swap
+File Name: C:\xampp\htdocs\demo.ayroui.com\css2
+Content Type: text/css
+
+Uri: https://fonts.gstatic.com/s/inter/v11/UcCO3FwrK3iLTeHuS_fvQtMwCp50KnMw2boKoduKmMEVuBWYMZg.ttf
+File Name: C:\xampp\htdocs\demo.ayroui.com\s\inter\v11\UcCO3FwrK3iLTeHuS_fvQtMwCp50KnMw2boKoduKmMEVuBWYMZg.ttf
+Content Type: font/ttf
+
+Uri: https://fonts.gstatic.com/s/inter/v11/UcCO3FwrK3iLTeHuS_fvQtMwCp50KnMw2boKoduKmMEVuDyfMZg.ttf
+File Name: C:\xampp\htdocs\demo.ayroui.com\s\inter\v11\UcCO3FwrK3iLTeHuS_fvQtMwCp50KnMw2boKoduKmMEVuDyfMZg.ttf
+Content Type: font/ttf
+
+Uri: https://fonts.gstatic.com/s/inter/v11/UcCO3FwrK3iLTeHuS_fvQtMwCp50KnMw2boKoduKmMEVuDyYMZg.ttf
+File Name: C:\xampp\htdocs\demo.ayroui.com\s\inter\v11\UcCO3FwrK3iLTeHuS_fvQtMwCp50KnMw2boKoduKmMEVuDyYMZg.ttf
+Content Type: font/ttf
+
+Uri: https://fonts.gstatic.com/s/inter/v11/UcCO3FwrK3iLTeHuS_fvQtMwCp50KnMw2boKoduKmMEVuFuYMZg.ttf
+File Name: C:\xampp\htdocs\demo.ayroui.com\s\inter\v11\UcCO3FwrK3iLTeHuS_fvQtMwCp50KnMw2boKoduKmMEVuFuYMZg.ttf
+Content Type: font/ttf
+
+Uri: https://fonts.gstatic.com/s/inter/v11/UcCO3FwrK3iLTeHuS_fvQtMwCp50KnMw2boKoduKmMEVuGKYMZg.ttf
+File Name: C:\xampp\htdocs\demo.ayroui.com\s\inter\v11\UcCO3FwrK3iLTeHuS_fvQtMwCp50KnMw2boKoduKmMEVuGKYMZg.ttf
+Content Type: font/ttf
+
+Uri: https://fonts.gstatic.com/s/inter/v11/UcCO3FwrK3iLTeHuS_fvQtMwCp50KnMw2boKoduKmMEVuI6fMZg.ttf
+File Name: C:\xampp\htdocs\demo.ayroui.com\s\inter\v11\UcCO3FwrK3iLTeHuS_fvQtMwCp50KnMw2boKoduKmMEVuI6fMZg.ttf
+Content Type: font/ttf
+
+Uri: https://fonts.gstatic.com/s/inter/v11/UcCO3FwrK3iLTeHuS_fvQtMwCp50KnMw2boKoduKmMEVuLyfMZg.ttf
+File Name: C:\xampp\htdocs\demo.ayroui.com\s\inter\v11\UcCO3FwrK3iLTeHuS_fvQtMwCp50KnMw2boKoduKmMEVuLyfMZg.ttf
+Content Type: font/ttf
+
+Uri: https://fonts.gstatic.com/s/inter/v11/UcCO3FwrK3iLTeHuS_fvQtMwCp50KnMw2boKoduKmMEVuOKfMZg.ttf
+File Name: C:\xampp\htdocs\demo.ayroui.com\s\inter\v11\UcCO3FwrK3iLTeHuS_fvQtMwCp50KnMw2boKoduKmMEVuOKfMZg.ttf
+Content Type: font/ttf
+
