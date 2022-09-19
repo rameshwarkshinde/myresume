@@ -530,22 +530,22 @@
 </body>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 <script>
-    // jQuery(document).ready(function () {
-    //     if (jQuery(window).width() < 576) {
-    //         jQuery(".mob-Mode .mob-title").click(function () {
-    //             jQuery(this).toggleClass('open');
-    //             jQuery(this).next(".mob-content").slideToggle(300);
-    //         });
-    //     }
-    // });
-    // $(window).resize(function () {
-    //     if (jQuery(window).width() < 576) {
-    //         jQuery(".mob-Mode .mob-title").click(function () {
-    //             jQuery(this).toggleClass('open');
-    //             jQuery(this).next(".mob-content").slideToggle(300);
-    //         });
-    //     }
-    // });
+    jQuery(document).ready(function () {
+        if (jQuery(window).width() < 576) {
+            jQuery(".mob-Mode .mob-title").click(function () {
+                jQuery(this).toggleClass('open');
+                jQuery(this).next(".mob-content").slideToggle(300);
+            });
+        }
+    });
+    $(window).resize(function () {
+        if (jQuery(window).width() < 576) {
+            jQuery(".mob-Mode .mob-title").click(function () {
+                jQuery(this).toggleClass('open');
+                jQuery(this).next(".mob-content").slideToggle(300);
+            });
+        }
+    });
 </script>
 <script>
     $(document).ready(function () {
